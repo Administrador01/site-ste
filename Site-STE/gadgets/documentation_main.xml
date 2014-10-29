@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-<ModulePrefs title="menu STE" >
+<ModulePrefs title="Documentation main" >
   <Require feature="dynamic-height"/>   
   <Require feature="setprefs" />  
 </ModulePrefs>  
@@ -19,7 +19,7 @@
     padding-right: 15px;
 }
 
-.content .destacadoHome {
+.destacadoHome {
     background-color: #fbfbfb;
     border: 1px solid #dddddd;
     border-radius: 4px;
