@@ -1,39 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-<ModulePrefs title="menu Global Customer Services portal BBVA1" >
+<ModulePrefs title="menu.xml menu portal BBVA1 " >
 ﻿  <Require feature="dynamic-height"/>   
 ﻿  <Require feature="setprefs" />  
 </ModulePrefs>  
-<!--<UserPref name="VarrootSite" display_name="Root del Site" required="true" default_value="home"/>-->
-<!--
-<Content type="html" view="configuration" preferred_height="80">
-<![CDATA[
-﻿  <style>
-﻿  ﻿  input#VarrootSite {
-           width: 300px;
-          }﻿  ﻿    
-﻿  </style>
-  
-﻿  <table width="100%" border="0" id="tablaconfig">           
-﻿  ﻿  <tr>       
-﻿  ﻿  ﻿  <td>
-﻿  ﻿  ﻿  ﻿  Root del Site: <input type="text" id="VarrootSite" value="__UP_VarrootSite__"   onchange="registra('VarrootSite')"/>                   
-﻿  ﻿  ﻿  </td>
-﻿  ﻿  </tr>
-﻿  </table>﻿  
-  
-﻿  <script type="text/javascript">           
-﻿  ﻿  // Get userprefs
-﻿  ﻿  var prefs = new gadgets.Prefs();           
-﻿  ﻿  function registra(variable)
-﻿  ﻿  {﻿  
-﻿  ﻿  ﻿  prefs.set(variable,document.getElementById(variable).value);
-﻿  ﻿  }  
-﻿  ﻿  gadgets.window.adjustHeight();
-﻿  </script>   
-]]>
-</Content>
--->
 <Content type="html"><![CDATA[
 
 <style type="text/css">
@@ -158,7 +128,7 @@
 ﻿  ﻿  {
 ﻿  ﻿  ﻿  if(this.className.indexOf("current") == -1)  
 ﻿  ﻿  ﻿  {
-﻿  ﻿  ﻿  ﻿  getCurrent = $(this).parent().children("li.current:eq(0)");
+﻿  ﻿  ﻿  ﻿  getCurrent = $(this).parent().children("li.current ul:eq(0)");
 ﻿  ﻿  ﻿  ﻿  if(this.className.indexOf("top") != -1)  
 ﻿  ﻿  ﻿  ﻿  {
 ﻿  ﻿  ﻿  ﻿  ﻿  $(this).children("a:eq(0)").css("background-color","#2586d7");
@@ -222,7 +192,7 @@
 ﻿  {
 ﻿  ﻿  // Construct the breadcrumb string
 ﻿  ﻿  //var rootSite = prefs.getString("VarrootSite");
-﻿  ﻿  var rootSite = "global-customer-service";
+﻿  ﻿  var rootSite = "home";
 ﻿  ﻿  var s ="";
 ﻿  ﻿  var i,j,k = 0;
 ﻿  ﻿  var base = "";
@@ -289,69 +259,104 @@
 ﻿  <div id="menu">
 ﻿  ﻿  <ul id="dropline">
 ﻿  ﻿  ﻿  <li class="home"><a style="color:#fff;width:10px;margin-left:5px;" href="https://sites.google.com/a/bbva.com/portal-gcs/home/" target="_parent" onclick="mark"></a></li>
-﻿  ﻿  ﻿  <li class="top"><a id="metodologia" class="principal"  target="_parent" href="https://sites.google.com/a/bbva.com/global-customer-service/home/implementaciones">Implementación</a></li>﻿  ﻿  ﻿  
-﻿  ﻿  ﻿  <li class="top"><a id="documentos" class="principal" target="_parent" href="https://sites.google.com/a/bbva.com/global-customer-service/home/transaccionalidad">Transaccionalidad</a></li>
-﻿  ﻿  ﻿  
-﻿  ﻿  ﻿  <li class="top"><a id="proyectos" class="principal"  target="_parent">Cartera Viva</a>
-﻿  ﻿  <!-- ﻿  <ul style="left:-99999px; display: none;" class="sub">
-﻿  ﻿  ﻿  ﻿  ﻿  
-﻿  ﻿  ﻿  ﻿    
-﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/global-customer-service/proyectos/proyectos-cliente" target="_parent">Proyectos cliente</a></li>
-﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/global-customer-service/proyectos/herramientas" target="_parent">Herramientas</a></li>
-﻿  ﻿  ﻿  ﻿    
-﻿  ﻿  ﻿  ﻿  ﻿  
-﻿  ﻿  ﻿  ﻿  ﻿  
-﻿  ﻿  ﻿  </ul>  -->  </li>
-﻿  ﻿  ﻿  <li class="top"><a id="enlaces" class="principal"  target="_parent" href="https://sites.google.com/a/bbva.com/global-customer-service/home/gnc">Global NetCash</a>
+﻿  ﻿  ﻿  <li class="top"><a id="onboarding-clients" class="principal" href="https://sites.google.com/a/bbva.com/onboarding/" target="_parent">Onboarding</a>
+﻿  ﻿  ﻿  ﻿  <!--<ul style="left: -99999px; display: none;" class="sub">
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/onboarding-clients/cuestionarios-ventas" target="_parent">Cuestionarios Ventas</a></li>
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/onboarding-clients/catalogo-conexiones-h2h" target="_parent">Catálogo Conexiones H2H</a></li>
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/onboarding-clients/guias-implementacion-clientes" target="_parent">Guías Implementación de Clientes</a></li>
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/onboarding-clients/plantillas-peticiones" target="_parent">Plantillas de peticiones</a></li>
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/onboarding-clients/catalogo-de-servicios" target="_parent">Catálogo de Servicios</a></li>
+﻿  ﻿  ﻿  ﻿  </ul>-->
 ﻿  ﻿  ﻿  </li>
-﻿  ﻿  ﻿  
-﻿  ﻿  ﻿  <li class="top"><a id="gestion" class="principal"  target="_parent">Post Venta</a></li>
-         
-         <li class="top"><a id="contact" class="principal"  target="_parent">Contact Centers</a></li>
-         
-         <li class="top"><a id="repo" class="principal"  target="_parent">Repositorio de Informes</a></li>
-﻿  ﻿  ﻿  
+﻿  ﻿  ﻿  <li class="top"><a id="clientes" class="principal" href="https://sites.google.com/a/bbva.com/portal-gcs/home/clientes" target="_parent">Clientes</a>
+﻿  ﻿  ﻿  <li class="top"><a id="servicing" class="principal" href="https://sites.google.com/a/bbva.com/servicing/" target="_parent">Servicing</a>
+﻿  ﻿  ﻿  ﻿  <!--<ul style="left: -99999px; display: none;" class="sub">
+﻿  ﻿  ﻿  ﻿  ﻿  
+﻿  ﻿  ﻿  ﻿  ﻿  
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/servicing/workflow" target="_parent">WorkFlow de Clientes</a></li>
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/servicing/informes-servicing" target="_parent">Informes de Servicing</a></li>
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/servicing/documentacion-servicing" target="_parent">Documentación de Servicing</a></li>
+﻿  ﻿  ﻿  ﻿  </ul>-->
+﻿  ﻿  ﻿  </li>
+﻿  ﻿  ﻿  <li class="top"><a id="informes-de-gestion" class="principal" href="https://sites.google.com/a/bbva.com/portal-gcs/home/informes-de-gestion"target="_parent">Informes Gestión</a>
+﻿  ﻿  ﻿  ﻿  <!--<ul style="left: -99999px; display: none;" class="sub">
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/informes-de-gestion/resumen-ejecutivo-2012" target="_parent">Resumen Ejecutivo Implementaciones</a></li>
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/informes-de-gestion/resumen-ejecutivo-seguimiento-de-clientes" target="_parent">Resumen Ejecutivo Seguimiento de Clientes</a></li>
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/informes-de-gestion/resumen-ejecutivo-produccion" target="_parent">Resumen Ejecutivo Clientes en Producción</a></li>
+
+﻿  ﻿  ﻿  ﻿  </ul>-->
+﻿  ﻿  ﻿  </li>
+﻿  ﻿  ﻿  <li class="top"><a id="metodologia" class="principal" href="https://sites.google.com/a/bbva.com/it-cib-gtb/" target="_parent">IT C&IB - GTB</a>
+﻿  ﻿  ﻿  ﻿  <!--<ul style="left:-99999px; display: none;" class="sub floatRight">
+﻿  ﻿  ﻿  ﻿  ﻿  
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/it-cib-gtb/oneformat-cliente" target="_parent">OneFormat Cliente</a></li>
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/it-cib-gtb/equipo" target="_parent">Global Customer Solutions</a></li>
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/it-cib-gtb/proyectos" target="_parent">Proyectos</a></li>
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/it-cib-gtb/documentacion2" target="_parent">Documentación</a></li>
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/it-cib-gtb/implantacion-registro" target="_parent">Implantaciones</a></li>
+﻿  ﻿  ﻿  ﻿  ﻿  
+﻿  ﻿  ﻿  ﻿  </ul>-->
+﻿  ﻿  ﻿  </li>
+﻿  ﻿  ﻿  <li class="top"><a id="global-customer-services" class="principal" href="https://sites.google.com/a/bbva.com/global-customer-service/" target="_parent">Global Customer Services</a>
+﻿  ﻿  ﻿  ﻿  <!--<ul style="left: -99999px; display: none;" class="sub floatRight">
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/global-customer-services/gestion-conocimiento" target="_parent">Gestión del conocimiento</a></li>
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/global-customer-services/enlaces-productos" target="_parent">Enlaces a productos</a></li>
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/global-customer-services/enlaces-informes-gestion" target="_parent">Enlaces a informes de gestión</a></li>
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/global-customer-services/proyectos" target="_parent">Proyectos</a></li>
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/global-customer-services/documentos-alcance" target="_parent">Documentos alcance</a></li>
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/global-customer-services/metodologia" target="_parent">Metodología</a></li>
+﻿  ﻿  ﻿  ﻿  </ul>-->
+﻿  ﻿  ﻿  </li>
+﻿  ﻿  ﻿  <li class="top"><a id="global-product" class="principal" href="https://sites.google.com/a/bbva.com/global-product/" target="_parent">Global Product</a>
+﻿  ﻿  ﻿  ﻿  <!--<ul style="left: -99999px; display: none;" class="sub floatRight">
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/global-product/coming-soon" target="_parent">Cooming soon</a></li>
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/global-product/helpdesk" target="_parent">Helpdesk</a></li>
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/global-product/otros-servicios" target="_parent">Otros servicios</a></li>
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/global-product/one-format" target="_parent">One format</a></li>
+﻿  ﻿  ﻿  ﻿  ﻿  <li><a href="https://sites.google.com/a/bbva.com/portal-gcs/home/global-product/canales" target="_parent">Canales</a></li>
+﻿  ﻿  ﻿  ﻿  </ul>-->
+﻿  ﻿  ﻿  </li>
+﻿  ﻿  ﻿  <li class="top"><a class="principal" href="#" id="privacy">Global Sales</a></li>
 ﻿  ﻿  </ul>
 ﻿  </div>
 
 ﻿  <!-- breadcrumbs-->
 ﻿  <div id="title-crumbs">breadcrumbs</div>
 
-﻿  <!-- Elemento de men򠳥t visited -->
+﻿  <!-- Elemento de menú set visited -->
 ﻿  <script type="text/javascript">
 ﻿  gadgets.util.registerOnLoadHandler(datospagina);
 ﻿  function datospagina()
 ﻿  {
 ﻿  ﻿  var parametros = gadgets.util.getUrlParameters()["parent"];﻿  
+﻿  ﻿  if (parametros.indexOf("onboarding-clients")!=-1)
+﻿  ﻿  {
+﻿  ﻿  ﻿  document.getElementById("onboarding-clients").style.backgroundColor = "#2586D7";
+﻿  ﻿  }
+﻿  ﻿  if (parametros.indexOf("global-product")!=-1)
+﻿  ﻿  {
+﻿  ﻿  ﻿  document.getElementById("global-product").style.backgroundColor = "#2586d7";
+﻿  ﻿  }
 ﻿  ﻿  if (parametros.indexOf("metodologia")!=-1)
 ﻿  ﻿  {
-﻿  ﻿  ﻿  document.getElementById("metodologia").style.backgroundColor = "#2586D7";
+﻿  ﻿  ﻿  document.getElementById("metodologia").style.backgroundColor = "#2586d7";
 ﻿  ﻿  }
-﻿  ﻿  if (parametros.indexOf("documentos")!=-1)
+﻿  ﻿  if (parametros.indexOf("servicing")!=-1)
 ﻿  ﻿  {
-﻿  ﻿  ﻿  document.getElementById("documentos").style.backgroundColor = "#2586d7";
+﻿  ﻿  ﻿  document.getElementById("servicing").style.backgroundColor = "#2586d7";
 ﻿  ﻿  }
-﻿  ﻿  if (parametros.indexOf("proyectos")!=-1)
+﻿  ﻿  if (parametros.indexOf("clientes")!=-1)
 ﻿  ﻿  {
-﻿  ﻿  ﻿  document.getElementById("proyectos").style.backgroundColor = "#2586d7";
+﻿  ﻿  ﻿  document.getElementById("clientes").style.backgroundColor = "#2586d7";
 ﻿  ﻿  }
-﻿  ﻿  if (parametros.indexOf("enlaces")!=-1)
+﻿  ﻿  if (parametros.indexOf("informes-de-gestion")!=-1)
 ﻿  ﻿  {
-﻿  ﻿  ﻿  document.getElementById("enlaces").style.backgroundColor = "#2586d7";
+﻿  ﻿  ﻿  document.getElementById("informes-de-gestion").style.backgroundColor = "#2586d7";
 ﻿  ﻿  }
-﻿  ﻿  if (parametros.indexOf("gestion")!=-1)
+﻿  ﻿  if (parametros.indexOf("global-customer-services")!=-1)
 ﻿  ﻿  {
-﻿  ﻿  ﻿  document.getElementById("gestion").style.backgroundColor = "#2586d7";
-﻿  ﻿  }
-     if (parametros.indexOf("contact")!=-1)
-﻿  ﻿  {
-﻿  ﻿  ﻿  document.getElementById("contac").style.backgroundColor = "#2586d7";
-﻿  ﻿  }
-     if (parametros.indexOf("repo")!=-1)
-﻿  ﻿  {
-﻿  ﻿  ﻿  document.getElementById("repo").style.backgroundColor = "#2586d7";
-﻿  ﻿  }
-﻿  ﻿  ﻿  
+﻿  ﻿  ﻿  document.getElementById("global-customer-services").style.backgroundColor = "#2586d7";
+﻿  ﻿  }﻿  ﻿  
 ﻿  }
 ﻿  </script>
 
