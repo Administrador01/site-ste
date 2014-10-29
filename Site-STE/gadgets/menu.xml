@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-<ModulePrefs title="menu portal BBVA1" >
+<ModulePrefs title="menu portal BBVA Venezuela" >
 ﻿  <Require feature="dynamic-height"/>   
 ﻿  <Require feature="setprefs" />  
 </ModulePrefs>  
@@ -55,7 +55,7 @@
 ﻿  ﻿  position:relative;
 ﻿  ﻿  font-size:12px;
 ﻿  ﻿  height:38px;
-﻿  ﻿  background:url(https://bbvagcs.googlecode.com/svn/trunk/img/fondomenuhome38.png) no-repeat;
+﻿  ﻿  background:url(https://servicios-transaccionales-venezuela.googlecode.com/svn/trunk/fondomenuhome38.png) no-repeat;
 ﻿  }
 ﻿  #dropline,
 ﻿  #dropline ul {
@@ -75,6 +75,8 @@
 ﻿  #dropline li {
 ﻿  ﻿  float:left;
 ﻿  ﻿  height:38px;
+    width: 97px;
+    
 ﻿  }
 ﻿  #dropline li a {
 ﻿  ﻿  float:left;
@@ -88,6 +90,8 @@
 ﻿  ﻿  text-decoration:none;
 ﻿  ﻿  font-weight:bold;
 ﻿  ﻿  padding:0px 19px 0px 10px;
+    margin-right:auto;
+    margin-left:auto;
 ﻿  }
 ﻿  #dropline li ul li a {
 ﻿  ﻿  color: rgb(102, 102, 102);
@@ -97,7 +101,7 @@
 ﻿  }
 ﻿  #dropline li a.down {
 ﻿  ﻿  color:#fff;
-﻿  ﻿  background:url(https://bbvagcs.googlecode.com/svn/trunk/img/down.gif) no-repeat right center;
+﻿  ﻿  background:url(https://servicios-transaccionales-venezuela.googlecode.com/svn/trunk/down.gif) no-repeat right center;
 ﻿  }
 ﻿  #dropline li ul li a.down {
 ﻿  ﻿  font-size:14px;
@@ -108,7 +112,7 @@
 ﻿  ﻿  top:38px;
 ﻿  ﻿  left:-9999px;
 ﻿  ﻿  z-index:10;
-﻿  ﻿  background:url(https://bbvagcs.googlecode.com/svn/trunk/img/fade.png);
+﻿  ﻿  background:url(https://servicios-transaccionales-venezuela.googlecode.com/svn/trunk/fade.png);
 ﻿  }
 ﻿  #dropline li ul.floatRight li {
 ﻿  ﻿  float:right;
@@ -146,7 +150,7 @@
 ﻿  }﻿  ﻿  
 </style>
 
-<script src="https://bbvagcs.googlecode.com/svn/trunk/js/jquery-1.js" type="text/javascript"></script>
+<script src="https://servicios-transaccionales-venezuela.googlecode.com/svn/trunk/js/jquery-1.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 
@@ -222,7 +226,7 @@
 ﻿  {
 ﻿  ﻿  // Construct the breadcrumb string
 ﻿  ﻿  //var rootSite = prefs.getString("VarrootSite");
-﻿  ﻿  var rootSite = "global-product";
+﻿  ﻿  var rootSite = "onboarding";
 ﻿  ﻿  var s ="";
 ﻿  ﻿  var i,j,k = 0;
 ﻿  ﻿  var base = "";
@@ -288,61 +292,20 @@
 ﻿  
 ﻿  <div id="menu">
 ﻿  ﻿  <ul id="dropline">
-﻿  ﻿  ﻿  <li class="home"><a style="color:#fff;width:10px;margin-left:5px;" href="https://sites.google.com/a/bbva.com/global-product/" target="_parent" onclick="mark"></a></li>
-﻿  ﻿  ﻿  <li class="top"><a id="canales" class="principal" href="https://sites.google.com/a/bbva.com/global-product/global-net-cash" target="_parent">Global Net Cash</a>
-﻿  ﻿  ﻿  
-﻿  ﻿  ﻿  </li>
-﻿  ﻿  ﻿  <li class="top"><a id="oneformat" class="principal" href="https://sites.google.com/a/bbva.com/global-product/one-format" target="_parent">One format</a>
-﻿  ﻿  ﻿  
-﻿  ﻿  ﻿  </li>
-﻿  ﻿  ﻿  <li class="top"><a id="otrosservicios" class="principal" href="https://sites.google.com/a/bbva.com/global-product/core-net-cash" target="_parent">Core Net Cash</a>
-﻿  ﻿  ﻿  </li>
-         
-﻿  ﻿  ﻿  <li class="top"><a id="helpdesk" class="principal" href="https://sites.google.com/a/bbva.com/global-product/canales-directos" target="_parent">Canales Directos</a>
-﻿  ﻿  ﻿  </li>
-﻿  ﻿  ﻿  <li class="top"><a id="comingsoon" class="principal" href="https://sites.google.com/a/bbva.com/global-product/one-bank" target="_parent">One Bank</a>
-﻿  ﻿  ﻿  </li>
-         
-     <li class="top"><a id="metodologia" class="principal" href="https://sites.google.com/a/bbva.com/global-product/metodologia" target="_parent">Metodología</a>
-﻿  ﻿  ﻿  </li>
-﻿  ﻿  ﻿   <li class="top"><a id="formulario" class="principal" href="https://sites.google.com/a/bbva.com/global-product/formulario-solicitud" target="_parent">Formulario de Solicitud</a>
-﻿  ﻿  ﻿  </li>
+﻿  ﻿  ﻿  <li class="home"><a style="color:#fff;width:10px;margin-left:5px;" target="_parent" onclick="mark"></a></li>
+﻿  ﻿  ﻿  <li class="top"><a class="principal" target="_parent">Opción 1</a></li>
+      <li class="top"><a class="principal" target="_parent">Opción 2</a></li>
+      <li class="top"><a class="principal" target="_parent">Opción 3</a></li>
+      <li class="top"><a class="principal" target="_parent">Opción 4</a></li>
+      <li class="top"><a class="principal" target="_parent">Opción 5</a></li>
+      <li class="top"><a class="principal" target="_parent">Opción 6</a></li>      
 ﻿  ﻿  </ul>
 ﻿  </div>
 
 ﻿  <!-- breadcrumbs-->
 ﻿  <div id="title-crumbs">breadcrumbs</div>
 
-﻿  <!-- Elemento de menú set visited -->
-﻿  <script type="text/javascript">
-﻿  gadgets.util.registerOnLoadHandler(datospagina);
-﻿  function datospagina()
-﻿  {
-﻿  ﻿  var parametros = gadgets.util.getUrlParameters()["parent"];﻿  
-﻿  ﻿  if (parametros.indexOf("canales")!=-1)
-﻿  ﻿  {
-﻿  ﻿  ﻿  document.getElementById("canales").style.backgroundColor = "#2586D7";
-﻿  ﻿  }
-﻿  ﻿  if (parametros.indexOf("oneformat")!=-1)
-﻿  ﻿  {
-﻿  ﻿  ﻿  document.getElementById("oneformat").style.backgroundColor = "#2586d7";
-﻿  ﻿  }
-﻿  ﻿  if (parametros.indexOf("otrosservicios")!=-1)
-﻿  ﻿  {
-﻿  ﻿  ﻿  document.getElementById("otrosservicios").style.backgroundColor = "#2586d7";
-﻿  ﻿  }
-﻿  ﻿  if (parametros.indexOf("helpdesk")!=-1)
-﻿  ﻿  {
-﻿  ﻿  ﻿  document.getElementById("helpdesk").style.backgroundColor = "#2586d7";
-﻿  ﻿  }
-﻿  ﻿  if (parametros.indexOf("comingsoon")!=-1)
-﻿  ﻿  {
-﻿  ﻿  ﻿  document.getElementById("comingsoon").style.backgroundColor = "#2586d7";
-﻿  ﻿  }
-﻿  ﻿  ﻿  
-﻿  }
-﻿  </script>
-
+﻿  
 <!--Fin of the Breadcrumbs-->
 </div>
 <!-- end of content -->
