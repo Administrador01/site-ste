@@ -126,7 +126,7 @@ button {
     <div class="destacadoHome">
       <h2>Servicios</h2>
       <img id="imagen3" src="" alt="Imagen"/>
-      <p id="texto3">Lorem Ipsum dolor est...</p>
+      <p id="texto3"></p>
       <button onclick="" type="button">Acceder</button> 
     </div>
 
