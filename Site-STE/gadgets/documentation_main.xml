@@ -90,8 +90,8 @@ button {
     </div>
     <div class="destacadoHome">
       <h2>Servicios</h2>
-      <img src="" alt="Imagen destacado"/>
-      <p></p>
+      <img src="../img/cliente64x.png" alt="Imagen destacado"/>
+      <p>Lorem Ipsum dolor est...</p>
       <button onclick="" type="button">Acceder</button> 
     </div>
 
