@@ -5,6 +5,16 @@
   <Require feature="setprefs" />  
 </ModulePrefs>  
 
+<UserPref name="texto1" display_name="Texto 1:" default_value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus arcu quam, a finibus mi convallis sed."/>
+<UserPref name="imagen1" display_name="Imagen 1:" default_value="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/client64x.png"/>
+
+<UserPref name="texto2" display_name="Texto 2:" default_value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus arcu quam, a finibus mi convallis sed."/>
+<UserPref name="imagen2" display_name="Imagen 2:" default_value="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/client64x.png"/>
+
+<UserPref name="texto1" display_name="Texto 3:" default_value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus arcu quam, a finibus mi convallis sed."/>
+<UserPref name="imagen1" display_name="Imagen 3:" default_value="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/client64x.png"/>
+
+
 <Content type="html"><![CDATA[
 
 <style type="text/css">
@@ -15,8 +25,7 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+
 }
 
 .destacadoHome {
@@ -73,13 +82,21 @@ button {
 
 </style>
 
+ <script type="text/javascript">
+     
+      var html="";
+     
+      var prefs = new gadgets.Prefs();
+
+
+</script>
+
 <div class="container">
-    <hr class="separador">
     <br/>
     <div class="destacadoHome">
       <h2>Clientes</h2>
       <img src="" alt="Imagen"/>
-      <p></p>
+      <p>__UP_texto1__</p>
       <button onclick="" type="button">Acceder</button>
     </div>
     <div class="destacadoHome">
