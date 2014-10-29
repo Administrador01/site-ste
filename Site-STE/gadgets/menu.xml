@@ -1,107 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
 <ModulePrefs title="menu portal BBVA Venezuela" >
-﻿  <Require feature="dynamic-height"/>   
-﻿  <Require feature="setprefs" />  
+  <Require feature="dynamic-height"/>   
+  <Require feature="setprefs" />  
 </ModulePrefs>  
 
 <Content type="html"><![CDATA[
 
 <style type="text/css">
-﻿ 
+ 
 
-﻿  #menu {
-﻿  ﻿  margin-top:0px;
-﻿  ﻿  position:relative;
-﻿  ﻿  height:38px;
-﻿  }
-﻿  #dropline {
-﻿  ﻿  position:relative;
-﻿  ﻿  font-size:12px;
-﻿  ﻿  height:38px;
-﻿  ﻿  background:url(https://servicios-transaccionales-venezuela.googlecode.com/svn/trunk/fondomenuhome38.png) no-repeat;
-﻿  }
-﻿  #dropline,
-﻿  #dropline ul {
-﻿  ﻿  padding:0px;
-﻿  ﻿  margin:0;
-﻿  ﻿  list-style:none;
-﻿  ﻿  width:948px;
-﻿  }
-﻿  #dropline table {
-﻿  ﻿  border-collapse:collapse;
-﻿  ﻿  margin:-1px -10px 0 0;
-﻿  ﻿  padding:0;
-﻿  ﻿  width:0;
-﻿  ﻿  height:0;
-﻿  ﻿  font-size:12px;
-﻿  }
-﻿  #dropline li {
-﻿  ﻿  float:left;
-﻿  ﻿  height:38px;
+  #menu {
+    margin-top:0px;
+    position:relative;
+    height:38px;
+  }
+  #dropline {
+    position:relative;
+    font-size:12px;
+    height:38px;
+    background:url(https://servicios-transaccionales-venezuela.googlecode.com/svn/trunk/fondomenuhome38.png) no-repeat;
+  }
+  #dropline,
+  #dropline ul {
+    padding:0px;
+    margin:0;
+    list-style:none;
+    width:948px;
+  }
+  #dropline table {
+    border-collapse:collapse;
+    margin:-1px -10px 0 0;
+    padding:0;
+    width:0;
+    height:0;
+    font-size:12px;
+  }
+  #dropline li {
+    float:left;
+    height:38px;
     width: 97px;
     
-﻿  }
-﻿  #dropline li a {
-﻿  ﻿  float:left;
-﻿  ﻿  display:block;
-﻿  ﻿  height:37px;
-﻿  ﻿  line-height:38px;
-﻿  ﻿  padding:0 20px 0 10px;
-﻿  ﻿  font-family:arial, sans-serif;
-﻿  ﻿  font-size:11px;
-﻿  ﻿  color:#fff;
-﻿  ﻿  text-decoration:none;
-﻿  ﻿  font-weight:bold;
-﻿  ﻿  padding:0px 19px 0px 10px;
+  }
+  #dropline li a {
+    float:left;
+    display:block;
+    height:37px;
+    line-height:38px;
+    padding:0 20px 0 10px;
+    font-family:arial, sans-serif;
+    font-size:11px;
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+    padding:0px 19px 0px 10px;
     margin-right:auto;
     margin-left:auto;
-﻿  }
-﻿  #dropline li ul li a {
-﻿  ﻿  color: rgb(102, 102, 102);
-﻿  }
-﻿  #dropline li a.principal {
-﻿  ﻿  color:#fff;
-﻿  }
-﻿  #dropline li a.down {
-﻿  ﻿  color:#fff;
-﻿  ﻿  background:url(https://servicios-transaccionales-venezuela.googlecode.com/svn/trunk/down.gif) no-repeat right center;
-﻿  }
-﻿  #dropline li ul li a.down {
-﻿  ﻿  font-size:14px;
-﻿  ﻿  font-weight:bold;
-﻿  }
-﻿  #dropline li ul {
-﻿  ﻿  position:absolute;
-﻿  ﻿  top:38px;
-﻿  ﻿  left:-9999px;
-﻿  ﻿  z-index:10;
-﻿  ﻿  background:url(https://servicios-transaccionales-venezuela.googlecode.com/svn/trunk/fade.png);
-﻿  }
-﻿  #dropline li ul.floatRight li {
-﻿  ﻿  float:right;
-﻿  }
+  }
+  #dropline li ul li a {
+    color: rgb(102, 102, 102);
+  }
+  #dropline li a.principal {
+    color:#fff;
+  }
+  #dropline li a.down {
+    color:#fff;
+    background:url(https://servicios-transaccionales-venezuela.googlecode.com/svn/trunk/down.gif) no-repeat right center;
+  }
+  #dropline li ul li a.down {
+    font-size:14px;
+    font-weight:bold;
+  }
+  #dropline li ul {
+    position:absolute;
+    top:38px;
+    left:-9999px;
+    z-index:10;
+    background:url(https://servicios-transaccionales-venezuela.googlecode.com/svn/trunk/fade.png);
+  }
+  #dropline li ul.floatRight li {
+    float:right;
+  }
 
-﻿
+
 </style>
 
 
 
 <div id="content">
-﻿  
-﻿  <div id="menu">
-﻿  ﻿  <ul id="dropline" style="position:relative; ﻿font-size:12px;﻿ height:38px;﻿ background:url(https://servicios-transaccionales-venezuela.googlecode.com/svn/trunk/fondomenuhome38.png) no-repeat;">
-﻿  ﻿  ﻿  <li class="home"><a style="color:#fff;width:10px;margin-left:5px;" target="_parent" onclick="mark"></a></li>
-﻿  ﻿  ﻿  <li class="top"><a class="principal" target="_parent">Opción 1</a></li>
-      <li class="top"><a class="principal" target="_parent">Opción 2</a></li>
-      <li class="top"><a class="principal" target="_parent">Opción 3</a></li>
-      <li class="top"><a class="principal" target="_parent">Opción 4</a></li>
-      <li class="top"><a class="principal" target="_parent">Opción 5</a></li>
-      <li class="top"><a class="principal" target="_parent">Opción 6</a></li>      
-﻿  ﻿  </ul>
-﻿  </div>
+  
+  <div id="menu">
+    <ul id="dropline">
+      <li class="home"><a style="color:#fff;width:10px;margin-left:5px;" target="_parent" onclick="mark"></a></li>
+      <li class="top"><a class="principal" target="_parent">Opci�n 1</a></li>
+      <li class="top"><a class="principal" target="_parent">Opci�n 2</a></li>
+      <li class="top"><a class="principal" target="_parent">Opci�n 3</a></li>
+      <li class="top"><a class="principal" target="_parent">Opci�n 4</a></li>
+      <li class="top"><a class="principal" target="_parent">Opci�n 5</a></li>
+      <li class="top"><a class="principal" target="_parent">Opci�n 6</a></li>      
+    </ul>
+  </div>
 </div>
-﻿  
+  
 <!-- end of content -->
 ]]></Content>
 </Module>
