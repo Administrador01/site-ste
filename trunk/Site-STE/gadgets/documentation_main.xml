@@ -119,15 +119,14 @@ button {
       var texto3 = prefs.getString("texto3");
       var imagen3 = prefs.getString("imagen3");
       
-	  document.getElementById('texto1').value= texto1;
 	   document.getElementById('texto1').innerHTML= texto1;
 	  document.getElementById('imagen1').src= imagen1;
 	  console.log(texto1);
 	
-	  document.getElementById('texto2').value= texto2;
+	  document.getElementById('texto2').innerHTML= texto2;
 	  document.getElementById('imagen2').src= imagen2;	
 	
-	  document.getElementById('texto3').value= texto3;
+	  document.getElementById('texto3').innerHTML= texto3;
 	  document.getElementById('imagen3').src= imagen3;
 	
 
