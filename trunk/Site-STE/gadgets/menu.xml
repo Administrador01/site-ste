@@ -7,7 +7,7 @@
 
 <Content type="html"><![CDATA[
 
-<style type="text/css">
+<style>
 ﻿ 
 
 ﻿  #menu {
@@ -82,36 +82,7 @@
 ﻿  ﻿  float:right;
 ﻿  }
 
-﻿  #title-crumbs {
-﻿  ﻿  ﻿  font-size:12px;
-﻿  ﻿  ﻿  color:#3F78B2;
-﻿  ﻿  ﻿  text-transform: capitalize;
-﻿  ﻿  ﻿  margin-top: 7px;
-﻿  ﻿  }
-﻿  a.linkBreadCrumb,
-﻿  a:visited.linkBreadCrumb {
-﻿  ﻿  fon-weight: normal;
-﻿  ﻿  font-size:12px;
-﻿  ﻿  color:#3F78B2;
-﻿  ﻿  text-decoration:none;
-﻿  ﻿  text-transform: capitalize;
-﻿  }
-﻿  a:hover.linkBreadCrumb,
-﻿  a:active.linkBreadCrumb {
-﻿  ﻿  font-style: normal;
-﻿  ﻿  font-size:12px;
-﻿  ﻿  color:#009EE5;
-﻿  ﻿  fon-weight: normal;
-﻿  ﻿  text-decoration:none;﻿  ﻿  
-﻿  ﻿  text-transform: capitalize;
-﻿  }
-﻿  .currentBreadCrumb {
-﻿  ﻿  fon-weight: bold;
-﻿  ﻿  font-size:12px;
-﻿  ﻿  color:#009EE5;
-﻿  ﻿  text-decoration:none;
-﻿  ﻿  text-transform: capitalize;﻿  ﻿  
-﻿  }﻿  ﻿  
+﻿
 </style>
 
 
@@ -119,7 +90,7 @@
 <div id="content">
 ﻿  
 ﻿  <div id="menu">
-﻿  ﻿  <ul id="dropline" style=" position:relative; ﻿  font-size:12px;﻿  ﻿  height:38px;﻿  ﻿  background:url(https://servicios-transaccionales-venezuela.googlecode.com/svn/trunk/fondomenuhome38.png) no-repeat;">
+﻿  ﻿  <ul id="dropline" style="position:relative; ﻿font-size:12px;﻿ height:38px;﻿ background:url(https://servicios-transaccionales-venezuela.googlecode.com/svn/trunk/fondomenuhome38.png) no-repeat;">
 ﻿  ﻿  ﻿  <li class="home"><a style="color:#fff;width:10px;margin-left:5px;" target="_parent" onclick="mark"></a></li>
 ﻿  ﻿  ﻿  <li class="top"><a class="principal" target="_parent">Opción 1</a></li>
       <li class="top"><a class="principal" target="_parent">Opción 2</a></li>
