@@ -87,7 +87,25 @@ button {
       var html="";
      
       var prefs = new gadgets.Prefs();
-
+      
+      var texto1 = prefs.getString("texto1");
+      var imagen1 = prefs.getString("imagen1");
+      
+      var texto2 = prefs.getString("texto2");
+      var imagen2 = prefs.getString("imagen2");
+      
+      var texto3 = prefs.getString("texto3");
+      var imagen3 = prefs.getString("imagen3");
+      
+	document.getElementById('texto1').value= texto1;
+	document.getElementById('imagen1').value= imagen1;
+	
+	document.getElementById('texto2').value= texto2;
+	document.getElementById('imagen2').value= imagen2;	
+	
+	document.getElementById('texto3').value= texto3;
+	document.getElementById('imagen3').value= imagen3;
+	
 
 </script>
 
@@ -95,20 +113,20 @@ button {
     <br/>
     <div class="destacadoHome">
       <h2>Clientes</h2>
-      <img src="" alt="Imagen"/>
-      <p>__UP_texto1__</p>
+      <img id="imagen1" src="" alt="Imagen"/>
+      <p id="texto1"></p>
       <button onclick="" type="button">Acceder</button>
     </div>
     <div class="destacadoHome">
       <h2>Pruebas</h2>
-      <img src="" alt="Imagen"/>
-      <p></p>
+      <img id="imagen2" src="" alt="Imagen"/>
+      <p id="texto2"></p>
       <button onclick="" type="button">Acceder</button>
     </div>
     <div class="destacadoHome">
       <h2>Servicios</h2>
-      <img src="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/client64x.png" alt="Imagen"/>
-      <p>Lorem Ipsum dolor est...</p>
+      <img id="imagen3" src="" alt="Imagen"/>
+      <p id="texto3">Lorem Ipsum dolor est...</p>
       <button onclick="" type="button">Acceder</button> 
     </div>
 
