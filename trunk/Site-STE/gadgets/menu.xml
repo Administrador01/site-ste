@@ -119,7 +119,7 @@
 <div id="content">
 ﻿  
 ﻿  <div id="menu">
-﻿  ﻿  <ul id="dropline">
+﻿  ﻿  <ul id="dropline" style=" position:relative; ﻿  font-size:12px;﻿  ﻿  height:38px;﻿  ﻿  background:url(https://servicios-transaccionales-venezuela.googlecode.com/svn/trunk/fondomenuhome38.png) no-repeat;">
 ﻿  ﻿  ﻿  <li class="home"><a style="color:#fff;width:10px;margin-left:5px;" target="_parent" onclick="mark"></a></li>
 ﻿  ﻿  ﻿  <li class="top"><a class="principal" target="_parent">Opción 1</a></li>
       <li class="top"><a class="principal" target="_parent">Opción 2</a></li>
