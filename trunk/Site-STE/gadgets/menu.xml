@@ -53,12 +53,16 @@
     color: #0065b7;
 }
 
+.header-container .main-menu ul.menu li a span {
+    color: #fff;
+}
+
 .header-container .main-menu ul.menu li a.no-underline {
     text-decoration: none;
 }
 
 div.main-menu .menu li > a [class*="icon-"] {
-    background-image: url("../img/sprite-white-x24.png");
+    background-image: url("https://site-ste.googlecode.com/svn/trunk/Site-STE/img/sprite-white-x24.png");
     margin-right: 10px;
 }
 .clientes-24x {
@@ -78,12 +82,12 @@ div.main-menu .menu li > a [class*="icon-"] {
 
 
 <div class="header-container">
-		<img class="main-logo" src="../img/ste-logo.png"/>	
+		<img class="main-logo" src="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/ste-logo.png"/>	
 		<div class="main-menu">
 			<ul class="menu">
 				<li class="home">
 					<a href="${sessionScope.entorno}">
-						<img src="../img/home.png"/>
+						<img src="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/home.png"/>
 					</a>
 				</li>
 				
