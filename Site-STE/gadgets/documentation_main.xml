@@ -40,13 +40,13 @@ h2 {
     display: inline-block;
 }
 
- .content .destacadoHome > img {
+.destacadoHome > img {
     float: right;
     margin: 0;
     padding: 20px 0;
 }
 
-.content .destacadoHome > p {
+.destacadoHome > p {
     color: #71777f;
     font-family: arial,sans-serif;
     font-size: 12px;
