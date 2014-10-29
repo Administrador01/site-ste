@@ -36,6 +36,7 @@
     margin: 1.6%;
     padding: 20px;
     width: 30%;
+    max-width:251px;
 }
 
 h2 {
@@ -82,7 +83,7 @@ button {
 
 </style>
 
- <script type="text/javascript">
+<script type="text/javascript">
     
       var prefs = new gadgets.Prefs();
       
@@ -95,14 +96,15 @@ button {
       var texto3 = prefs.getString("texto3");
       var imagen3 = prefs.getString("imagen3");
       
-	document.getElementById('texto1').value= texto1;
-	document.getElementById('imagen1').value= imagen1;
+	  document.getElementById('texto1').value= texto1;
+	  document.getElementById('imagen1').value= imagen1;
+	  console.log(texto1);
 	
-	document.getElementById('texto2').value= texto2;
-	document.getElementById('imagen2').value= imagen2;	
+	  document.getElementById('texto2').value= texto2;
+	  document.getElementById('imagen2').value= imagen2;	
 	
-	document.getElementById('texto3').value= texto3;
-	document.getElementById('imagen3').value= imagen3;
+	  document.getElementById('texto3').value= texto3;
+	  document.getElementById('imagen3').value= imagen3;
 	
 
 </script>
