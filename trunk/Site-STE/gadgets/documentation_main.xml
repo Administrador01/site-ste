@@ -78,19 +78,19 @@ button {
     <br/>
     <div class="destacadoHome">
       <h2>Clientes</h2>
-      <img src="" alt="Imagen destacado"/>
+      <img src="" alt="Imagen"/>
       <p></p>
       <button onclick="" type="button">Acceder</button>
     </div>
     <div class="destacadoHome">
       <h2>Pruebas</h2>
-      <img src="" alt="Imagen destacado"/>
+      <img src="" alt="Imagen"/>
       <p></p>
       <button onclick="" type="button">Acceder</button>
     </div>
     <div class="destacadoHome">
       <h2>Servicios</h2>
-      <img src="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/client64x.png" alt="Imagen destacado"/>
+      <img src="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/client64x.png" alt="Imagen"/>
       <p>Lorem Ipsum dolor est...</p>
       <button onclick="" type="button">Acceder</button> 
     </div>
