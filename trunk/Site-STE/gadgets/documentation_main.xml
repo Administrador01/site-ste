@@ -83,9 +83,7 @@ button {
 </style>
 
  <script type="text/javascript">
-     
-      var html="";
-     
+    
       var prefs = new gadgets.Prefs();
       
       var texto1 = prefs.getString("texto1");
