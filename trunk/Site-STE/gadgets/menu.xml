@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-<ModulePrefs title="menu portal BBVA Venezuela" >
+<ModulePrefs title="menu STE" >
   <Require feature="dynamic-height"/>   
   <Require feature="setprefs" />  
 </ModulePrefs>  
@@ -25,6 +25,10 @@
     list-style: none outside none;
     padding: 3px 0 0;
     width: 100%;
+}
+
+.header-container .main-menu ul.menu li:hover {
+    background-color: #2586d7;
 }
 
 .header-container .main-menu ul.menu li.home {
