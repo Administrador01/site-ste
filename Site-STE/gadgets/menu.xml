@@ -92,12 +92,12 @@
   <div id="menu">
     <ul id="dropline">
       <li class="home"><a style="color:#fff;width:10px;margin-left:5px;" target="_parent" onclick="mark"></a></li>
-      <li class="top"><a class="principal" target="_parent">Opci髇 1</a></li>
-      <li class="top"><a class="principal" target="_parent">Opci髇 2</a></li>
-      <li class="top"><a class="principal" target="_parent">Opci髇 3</a></li>
-      <li class="top"><a class="principal" target="_parent">Opci髇 4</a></li>
-      <li class="top"><a class="principal" target="_parent">Opci髇 5</a></li>
-      <li class="top"><a class="principal" target="_parent">Opci髇 6</a></li>      
+      <li class="top"><a class="principal" target="_parent">Opci贸n 1</a></li>
+      <li class="top"><a class="principal" target="_parent">Opci贸n 2</a></li>
+      <li class="top"><a class="principal" target="_parent">Opci贸n 3</a></li>
+      <li class="top"><a class="principal" target="_parent">Opci贸n 4</a></li>
+      <li class="top"><a class="principal" target="_parent">Opci贸n 5</a></li>
+      <li class="top"><a class="principal" target="_parent">Opci贸n 6</a></li>      
     </ul>
   </div>
 </div>
