@@ -55,6 +55,7 @@
 
 .header-container .main-menu ul.menu li a span {
     color: #fff;
+    font-size:15px;
 }
 
 .header-container .main-menu ul.menu li a.no-underline {
@@ -68,6 +69,27 @@ div.main-menu .menu li > a [class*="icon-"] {
 .clientes-24x {
     background-position: -444px -444px;
 }
+
+.pruebas-24x {
+    background-position: -444px -518px;
+}
+
+.servicios-24x {
+    background-position: -74px -1332px;
+}
+
+.informes-24x {
+    background-position: -518px -1036px;
+}
+
+.soporte-24x {
+    background-position: -148px -1851px;
+}
+
+.documentacion-24x {
+    background-position: -518px -1036px;
+}
+
 .icon-24 {
     display: inline-block;
     height: 24px;
