@@ -44,12 +44,12 @@
 
 .header-container .main-menu ul.menu li.menu {
     display: inline-block;
-    height: 48px;
+    height: 39px;
     width: 15% !important;
     padding: 13px 0 0;
     position: relative;
     text-align: center;
-    top: -5px;
+    top: -4px;
     vertical-align: text-top;
 }
 
