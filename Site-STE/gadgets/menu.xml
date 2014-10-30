@@ -247,10 +247,10 @@ div.main-menu .menu li > a [class*="icon-"] {
                 for (i=0;i<parametros.length;i++)
                 {           
                 	if (parametros[i]!="")                   
-                 	  s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'base+"/"+ parametros[i]\' target=\'_parent\' title=\' " + parametros[i].replace(/-/g,' ') + "  \'>" + parametros[i] + "</a>";
+                 	  s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'"+ base + "/" + parametro[i] "\' target=\'_parent\'>" + parametro[i] + "</a> >";
                        
                 }
-                 console.log("5adenita: " + s);  
+                 console.log("6Cadenita: " + s);  
                 document.getElementById("title-crumbs").innerHTML = s;  
                
         }
