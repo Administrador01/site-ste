@@ -104,7 +104,7 @@ a.btn{
       <h2 id="titulo1"></h2>
       <img id="imagen1" src="" alt="Imagen"/>
       <p id="texto1"></p>
-      <a target="_top" id="boton1" href="" class="btn">Acceder</a>
+      <a target="_parent" id="boton1" href="" class="btn">Acceder</a>
     </div>
  </div>
 
