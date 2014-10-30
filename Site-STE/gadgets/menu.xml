@@ -235,18 +235,21 @@ div.main-menu .menu li > a [class*="icon-"] {
                 var rootSite = "home";
                 var s ="Documentación >";
                 var i,j,k = 0;
-                var base = "Home";
+                var base = "https://sites.google.com/a/bbva.com/portal-ste/documentacion";
                 var barra = "/";
-                var parametros = gadgets.util.getUrlParameters()["parent"].split("portal-ste")[1].split("/");  
+                var parametros = gadgets.util.getUrlParameters()["parent"].split("documentacion")[1].split("/");  
                 console.log(parametros);
                 var indexroot = indice(parametros, rootSite);  
                
+               	s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'http://portal-ste.appspot.com\' target=\'_parent\'> Home </a> >";
+               	s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'https://sites.google.com/a/bbva.com/portal-ste/documentacion\' target=\'_parent\'> Documentación </a> >";
+               
                 for (i=0;i<parametros.length;i++)
                 {                              
-                   s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'"+ base + rootSite + barra + "\' target=\'_parent\' title=\' " + parametros[i].replace(/-/g," ") + "  \'> parametros[i] </a>";
+                   s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'base+"/"+ parametros[i]\' target=\'_parent\' title=\' " + parametros[i].replace(/-/g," ") + "  \'>" + parametros[i] + "</a>";
                        
                 }
-                 console.log("1Cadenita: " + s);  
+                 console.log("2Cadenita: " + s);  
                 document.getElementById("title-crumbs").innerHTML = s;  
                
         }
