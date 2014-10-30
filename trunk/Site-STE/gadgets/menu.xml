@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: "BBVA Web Book";
-    src: url(https://site-ste.googlecode.com/svn/trunk/Site-STE/fonts/WebLight/bbvaweb-book-ttf.ttf);
+    src: url(https://site-ste.googlecode.com/svn/trunk/Site-STE/fonts/WebBook/bbvaweb-book-ttf.ttf);
 
     font-weight: normal;
 }
