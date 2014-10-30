@@ -233,63 +233,18 @@ div.main-menu .menu li > a [class*="icon-"] {
                 // Construct the breadcrumb string
                 //var rootSite = prefs.getString("VarrootSite");
                 var rootSite = "home";
-                var s ="";
+                var s ="Documentación >";
                 var i,j,k = 0;
                 var base = "Home";
                 var barra = "/";
-                var parametros = gadgets.util.getUrlParameters()["parent"].split("/");  
+                var parametros = gadgets.util.getUrlParameters()["parent"].split("portal-ste")[1].split("/");  
                 console.log(parametros);
                 var indexroot = indice(parametros, rootSite);  
                
                 for (i=0;i<parametros.length;i++)
                 {                              
-                        if(i<indexroot)
-                        {
-                                base = base + parametros[i]+ "/";                              
-                        }
-                        if (parametros[i] == rootSite)
-                        {      
-                                s = "&nbsp;<a class=\'linkBreadCrumb\' href=\'"+ base + rootSite + barra + "\' target=\'_parent\' title=\' " + parametros[i].replace(/-/g," ") + "  \'>home</a>";
+                   s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'"+ base + rootSite + barra + "\' target=\'_parent\' title=\' " + parametros[i].replace(/-/g," ") + "  \'> parametros[i] </a>";
                        
-                                for(j=i+1;j<parametros.length;++j)
-                                {  
-                                        var aux = parametros[j].replace(/-/g," ");                                              
-                                       
-                                        if (aux.indexOf("?")>1)
-                                        {
-                                                var auxMov = aux.split("?");
-                                                var litEnlace = auxMov[0];
-                                        }
-                                        else
-                                        {                                                      
-                                                if (aux.indexOf("ficha")>-1)
-                                                {                                                              
-                                                        var litEnlace = "Ficha";
-                                                }
-                                                else if (aux.indexOf("detalle proyecto")>-1)
-                                                {                                                              
-                                                        var litEnlace = "Detalle Proyecto";
-                                                }
-                                                else if (aux.indexOf("contactos")>-1)
-                                                {
-                                                        var litEnlace = "Contactos";
-                                                }
-                                                else
-                                                {                                                              
-                                                        var litEnlace = aux;
-                                                }
-                                        }
-                                        if (j<parametros.length-1)
-                                        {
-                                                s = s + "<a class=\'linkBreadCrumb\' href=\'"+ base  + rootSite + barra  + parametros[j] + barra + "\' target=\'_parent\' title=\'" + litEnlace + "\'> >&nbsp;" + litEnlace + "</a>";
-                                                rootSite = rootSite + "/" + parametros[j];
-                                        }
-                                        else
-                                        {                                              
-                                                s = s + " ><span class=\'currentBreadCrumb\' + parametros[j] + barra + \' >&nbsp;" + litEnlace + "</span>";
-                                        }
-                                }
-                        }
                 }
                  console.log("1Cadenita: " + s);  
                 document.getElementById("title-crumbs").innerHTML = s;  
