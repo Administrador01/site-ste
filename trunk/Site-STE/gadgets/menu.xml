@@ -11,14 +11,14 @@
 
 @font-face {
     font-family: "BBVA Web Book";
-    src: url(../fonts/WebBook/bbvaweb-book-ttf.ttf);
+    src: url(https://site-ste.googlecode.com/svn/trunk/Site-STE/fonts/WebLight/bbvaweb-book-ttf.ttf);
 
     font-weight: normal;
 }
 
 @font-face {
     font-family: "BBVA Web Light";
-    src: url(../fonts/WebLight/bbvaweb-light-ttf.ttf);
+    src: url(https://site-ste.googlecode.com/svn/trunk/Site-STE/fonts/WebLight/bbvaweb-light-ttf.ttf);
 
     font-weight: normal;
 }
