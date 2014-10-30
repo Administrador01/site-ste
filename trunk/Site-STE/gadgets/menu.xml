@@ -74,6 +74,7 @@
 .header-container .main-menu ul.menu li a span {
     color: #fff;
     font-size:15px;
+    font-family: "BBVA Web Book";
 }
 
 .header-container .main-menu ul.menu li a.no-underline {
