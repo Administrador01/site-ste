@@ -41,6 +41,7 @@
     padding: 20px;
     width: 25%;
     max-width:251px;
+    text-align:left;
 }
 
 h2 {
