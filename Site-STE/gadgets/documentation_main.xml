@@ -114,21 +114,9 @@ a.btn{
       <h2 id="titulo1"></h2>
       <img id="imagen1" src="" alt="Imagen"/>
       <p id="texto1"></p>
-      <button id="boton1" type="button">Acceder</button>
-      <a href="" class="btn">Acceder</a>
+      <a id="boton1" href="" class="btn">Acceder</a>
     </div>
-    <div class="destacadoHome">
-      <h2 id="titulo2"></h2>
-      <img id="imagen2" src="" alt="Imagen"/>
-      <p id="texto2"></p>
-      <button id="boton2" type="button">Acceder</button>
-    </div>
-    <div class="destacadoHome">
-      <h2 id="titulo3"></h2>
-      <img id="imagen3" src="" alt="Imagen"/>
-      <p id="texto3"></p>
-      <button id="boton3" type="button">Acceder</button> 
-    </div>
+    
 
   </div>
 
