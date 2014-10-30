@@ -127,31 +127,15 @@ a.btn{
       var texto1 = prefs.getString("texto1");
       var imagen1 = prefs.getString("imagen1");
       
-      var url2 = prefs.getString("url2");
-      var titulo2 = prefs.getString("titulo2");
-      var texto2 = prefs.getString("texto2");
-      var imagen2 = prefs.getString("imagen2");
-      
-      var url3 = prefs.getString("url3");
-      var titulo3 = prefs.getString("titulo3");
-      var texto3 = prefs.getString("texto3");
-      var imagen3 = prefs.getString("imagen3");
+   
       
       console.log(url1);
-      document.getElementById('boton1').onclick= function() { window.location.href= + url1 };
+      document.getElementById('boton1').href= url1;
       document.getElementById('titulo1').innerHTML= titulo1;      
 	  document.getElementById('texto1').innerHTML= texto1;
 	  document.getElementById('imagen1').src= imagen1;
 	  
-      document.getElementById('boton2').onclick= function() { window.location.href= + url2 };
-	  document.getElementById('titulo2').innerHTML= titulo2;
-	  document.getElementById('texto2').innerHTML= texto2;
-	  document.getElementById('imagen2').src= imagen2;	
-	
-	  document.getElementById('boton3').onclick= function() { window.location.href= + url3 };
-	  document.getElementById('titulo3').innerHTML= titulo3;
-	  document.getElementById('texto3').innerHTML= texto3;
-	  document.getElementById('imagen3').src= imagen3;
+   
 	
 
 </script>
