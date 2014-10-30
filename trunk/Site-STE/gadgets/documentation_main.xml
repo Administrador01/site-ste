@@ -15,15 +15,7 @@
 
 <style type="text/css">
  
-.container {
-    box-sizing: border-box;
-    max-width: 980px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align:center;
 
-}
 
 .destacadoHome {
     background-color: #fbfbfb;
@@ -32,7 +24,7 @@
     float: left;
     margin: 1.6%;
     padding: 20px;
-    width: 25%;
+    width: 100%;
     max-width:251px;
     text-align:left;
 }
@@ -98,15 +90,14 @@ a.btn{
 
 </style>
 
-<div class="container">
-    <br/>
+
     <div class="destacadoHome">
       <h2 id="titulo1"></h2>
       <img id="imagen1" src="" alt="Imagen"/>
       <p id="texto1"></p>
       <a target="_parent" id="boton1" href="" onclick="parent.location.href='#'" class="btn">Acceder</a>
     </div>
- </div>
+
 
 <script type="text/javascript">
     
