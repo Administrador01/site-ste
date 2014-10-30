@@ -116,9 +116,7 @@ a.btn{
       <p id="texto1"></p>
       <a id="boton1" href="" class="btn">Acceder</a>
     </div>
-    
-
-  </div>
+ </div>
 
 <script type="text/javascript">
     
