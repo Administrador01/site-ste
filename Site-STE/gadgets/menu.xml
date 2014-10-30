@@ -233,7 +233,7 @@ div.main-menu .menu li > a [class*="icon-"] {
                 // Construct the breadcrumb string
                 //var rootSite = prefs.getString("VarrootSite");
                 var rootSite = "home";
-                var s ="Documentación >";
+                var s ="";
                 var i,j,k = 0;
                 var base = "https://sites.google.com/a/bbva.com/portal-ste/documentacion";
                 var barra = "/";
@@ -245,11 +245,12 @@ div.main-menu .menu li > a [class*="icon-"] {
                	s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'https://sites.google.com/a/bbva.com/portal-ste/documentacion\' target=\'_parent\'> Documentación </a> >";
                
                 for (i=0;i<parametros.length;i++)
-                {                              
-                   s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'base+"/"+ parametros[i]\' target=\'_parent\' title=\' " + parametros[i].replace(/-/g," ") + "  \'>" + parametros[i] + "</a>";
+                {           
+                	if (parametros[1]!="")                   
+                 	  s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'base+"/"+ parametros[i]\' target=\'_parent\' title=\' " + parametros[i].replace(/-/g," ") + "  \'>" + parametros[i] + "</a>";
                        
                 }
-                 console.log("2Cadenita: " + s);  
+                 console.log("3Cadenita: " + s);  
                 document.getElementById("title-crumbs").innerHTML = s;  
                
         }
