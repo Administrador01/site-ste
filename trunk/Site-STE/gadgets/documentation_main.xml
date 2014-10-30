@@ -96,12 +96,14 @@ a.btn{
     color: #fff;
     cursor: pointer;
     font: 12px/24px "BBVA Web Medium",arial bold,sans-serif;
-    height: 30px;
+    height: 29px;
     padding: 2px 9px 2px 8px;
     position: relative;
     text-align: center;
     text-shadow: none;
     vertical-align: middle;
+    display: inline-block;
+    text-decoration:none;
 }
 
 </style>
