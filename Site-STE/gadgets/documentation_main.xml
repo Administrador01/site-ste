@@ -133,6 +133,7 @@ button {
       var texto3 = prefs.getString("texto3");
       var imagen3 = prefs.getString("imagen3");
       
+      console.log(url1);
       document.getElementById('boton1').onclick= function() { window.location.href= + url1 };
       document.getElementById('titulo1').innerHTML= titulo1;      
 	  document.getElementById('texto1').innerHTML= texto1;
