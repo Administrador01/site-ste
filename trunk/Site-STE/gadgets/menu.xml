@@ -121,7 +121,7 @@ div.main-menu .menu li > a [class*="icon-"] {
                         font-size:12px;
                         color:#3F78B2;
                         text-transform: capitalize;
-                        margin-top: 7px;
+                        margin-top: 20px;
                 }
         a.linkBreadCrumb,
         a:visited.linkBreadCrumb {
@@ -155,7 +155,7 @@ div.main-menu .menu li > a [class*="icon-"] {
 	$(document).ready(function()
         {
         	showBreadcrumbs();
-        }
+        });
 	
 	 function indice (parametros, rootSite)
         {      
