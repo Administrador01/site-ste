@@ -97,19 +97,19 @@ button {
       <h2 id="titulo1"></h2>
       <img id="imagen1" src="" alt="Imagen"/>
       <p id="texto1"></p>
-      <button id="boton1" onclick="" type="button">Acceder</button>
+      <button id="boton1" type="button">Acceder</button>
     </div>
     <div class="destacadoHome">
       <h2 id="titulo2"></h2>
       <img id="imagen2" src="" alt="Imagen"/>
       <p id="texto2"></p>
-      <button id="boton2" onclick="" type="button">Acceder</button>
+      <button id="boton2" type="button">Acceder</button>
     </div>
     <div class="destacadoHome">
       <h2 id="titulo3"></h2>
       <img id="imagen3" src="" alt="Imagen"/>
       <p id="texto3"></p>
-      <button id="boton3" onclick="" type="button">Acceder</button> 
+      <button id="boton3" type="button">Acceder</button> 
     </div>
 
   </div>
