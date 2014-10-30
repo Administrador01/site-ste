@@ -150,12 +150,71 @@ div.main-menu .menu li > a [class*="icon-"] {
 
 </style>
 
-<script>
 
-	$(document).ready(function()
-        {
-        	showBreadcrumbs();
-        });
+<div class="header-container">
+		<img class="main-logo" src="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/ste-logo.png"/>	
+		<div class="main-menu">
+			<ul class="menu">
+				<li class="home">
+					<a href="http://portal-ste.appspot.com/">
+						<img src="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/home.png"/>
+					</a>
+				</li>
+				
+				<li class="menu">
+					<a class="no-underline"  href="#">
+						<span class="icon-24 clientes-24x"></span> 
+						<span class="menu-title">Clientes</span>
+					</a>
+				</li>
+				
+				<li class="menu">
+					<a class="no-underline" href="#">
+						<span class="icon-24 pruebas-24x"></span>
+						<span class="menu-title">Pruebas</span>
+					</a>
+				</li>
+				
+				<li class="menu">
+					<a class="no-underline" href="#">
+						<span class="icon-24 servicios-24x"></span>
+						<span class="menu-title">Servicios</span>
+					</a>
+				</li>
+				
+				<li class="menu">
+					<a class="no-underline" href="#">
+						<span class="icon-24 informes-24x"></span>
+						<span class="menu-title">Informes</span>
+					</a>
+				</li>
+				
+				<li class="menu">
+					<a class="no-underline" href="#">
+						<span class="icon-24 soporte-24x"></span>
+						<span class="menu-title">Soporte</span>
+					</a>
+				</li>
+				
+				<li class="menu">
+					<a class="no-underline" href="#">
+						<span class="icon-24 documentacion-24x"></span>
+						<span class="menu-title">Documentación</span>
+					</a>
+				</li>
+			</ul>		
+		</div>	
+	</div>
+<!-- end of content -->
+
+ <!-- breadcrumbs-->
+        <div id="title-crumbs">breadcrumbs</div>
+        
+        <script>
+
+
+        	
+       
 	
 	 function indice (parametros, rootSite)
         {      
@@ -235,66 +294,9 @@ div.main-menu .menu li > a [class*="icon-"] {
         }
 	
 
+showBreadcrumbs();
 </script>
-
-<div class="header-container">
-		<img class="main-logo" src="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/ste-logo.png"/>	
-		<div class="main-menu">
-			<ul class="menu">
-				<li class="home">
-					<a href="http://portal-ste.appspot.com/">
-						<img src="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/home.png"/>
-					</a>
-				</li>
-				
-				<li class="menu">
-					<a class="no-underline"  href="#">
-						<span class="icon-24 clientes-24x"></span> 
-						<span class="menu-title">Clientes</span>
-					</a>
-				</li>
-				
-				<li class="menu">
-					<a class="no-underline" href="#">
-						<span class="icon-24 pruebas-24x"></span>
-						<span class="menu-title">Pruebas</span>
-					</a>
-				</li>
-				
-				<li class="menu">
-					<a class="no-underline" href="#">
-						<span class="icon-24 servicios-24x"></span>
-						<span class="menu-title">Servicios</span>
-					</a>
-				</li>
-				
-				<li class="menu">
-					<a class="no-underline" href="#">
-						<span class="icon-24 informes-24x"></span>
-						<span class="menu-title">Informes</span>
-					</a>
-				</li>
-				
-				<li class="menu">
-					<a class="no-underline" href="#">
-						<span class="icon-24 soporte-24x"></span>
-						<span class="menu-title">Soporte</span>
-					</a>
-				</li>
-				
-				<li class="menu">
-					<a class="no-underline" href="#">
-						<span class="icon-24 documentacion-24x"></span>
-						<span class="menu-title">Documentación</span>
-					</a>
-				</li>
-			</ul>		
-		</div>	
-	</div>
-<!-- end of content -->
-
- <!-- breadcrumbs-->
-        <div id="title-crumbs">breadcrumbs</div>
+        
 
 ]]></Content>
 </Module>
