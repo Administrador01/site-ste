@@ -291,8 +291,9 @@ div.main-menu .menu li > a [class*="icon-"] {
                                 }
                         }
                 }
+                 console.log("1Cadenita: " + s);  
                 document.getElementById("title-crumbs").innerHTML = s;  
-                console.log("Cadenita: " + s);  
+               
         }
 	
 
