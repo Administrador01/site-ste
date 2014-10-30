@@ -10,16 +10,6 @@
 <UserPref name="texto1" display_name="Texto 1:" default_value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus arcu quam, a finibus mi convallis sed."/>
 <UserPref name="imagen1" display_name="Imagen 1:" default_value="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/client64x.png"/>
 
-<UserPref name="url2" display_name="URL 2:" default_value=""/>
-<UserPref name="titulo2" display_name="Titulo 2:" default_value="Titulo"/>
-<UserPref name="texto2" display_name="Texto 2:" default_value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus arcu quam, a finibus mi convallis sed."/>
-<UserPref name="imagen2" display_name="Imagen 2:" default_value="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/client64x.png"/>
-
-<UserPref name="url3" display_name="URL 3:" default_value=""/>
-<UserPref name="titulo3" display_name="Titulo 3:" default_value="Titulo"/>
-<UserPref name="texto3" display_name="Texto 3:" default_value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus arcu quam, a finibus mi convallis sed."/>
-<UserPref name="imagen3" display_name="Imagen 3:" default_value="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/client64x.png"/>
-
 
 <Content type="html"><![CDATA[
 
