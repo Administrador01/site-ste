@@ -5,14 +5,17 @@
   <Require feature="setprefs" />  
 </ModulePrefs>  
 
+<UserPref name="url1" display_name="URL 1:" default_value=""/>
 <UserPref name="titulo1" display_name="Titulo 1:" default_value="Titulo"/>
 <UserPref name="texto1" display_name="Texto 1:" default_value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus arcu quam, a finibus mi convallis sed."/>
 <UserPref name="imagen1" display_name="Imagen 1:" default_value="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/client64x.png"/>
 
+<UserPref name="url2" display_name="URL 2:" default_value=""/>
 <UserPref name="titulo2" display_name="Titulo 2:" default_value="Titulo"/>
 <UserPref name="texto2" display_name="Texto 2:" default_value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus arcu quam, a finibus mi convallis sed."/>
 <UserPref name="imagen2" display_name="Imagen 2:" default_value="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/client64x.png"/>
 
+<UserPref name="url3" display_name="URL 3:" default_value=""/>
 <UserPref name="titulo3" display_name="Titulo 3:" default_value="Titulo"/>
 <UserPref name="texto3" display_name="Texto 3:" default_value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus arcu quam, a finibus mi convallis sed."/>
 <UserPref name="imagen3" display_name="Imagen 3:" default_value="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/client64x.png"/>
@@ -94,19 +97,19 @@ button {
       <h2 id="titulo1"></h2>
       <img id="imagen1" src="" alt="Imagen"/>
       <p id="texto1"></p>
-      <button onclick="" type="button">Acceder</button>
+      <button id="boton1" onclick="" type="button">Acceder</button>
     </div>
     <div class="destacadoHome">
       <h2 id="titulo2"></h2>
       <img id="imagen2" src="" alt="Imagen"/>
       <p id="texto2"></p>
-      <button onclick="" type="button">Acceder</button>
+      <button id="boton2" onclick="" type="button">Acceder</button>
     </div>
     <div class="destacadoHome">
       <h2 id="titulo3"></h2>
       <img id="imagen3" src="" alt="Imagen"/>
       <p id="texto3"></p>
-      <button onclick="" type="button">Acceder</button> 
+      <button id="boton3" onclick="" type="button">Acceder</button> 
     </div>
 
   </div>
@@ -115,27 +118,32 @@ button {
     
       var prefs = new gadgets.Prefs();
       
+      var url1 = prefs.getString("url1");
       var titulo1 = prefs.getString("titulo1");
       var texto1 = prefs.getString("texto1");
       var imagen1 = prefs.getString("imagen1");
       
+      var url2 = prefs.getString("url2");
       var titulo2 = prefs.getString("titulo2");
       var texto2 = prefs.getString("texto2");
       var imagen2 = prefs.getString("imagen2");
       
+      var url3 = prefs.getString("url3");
       var titulo3 = prefs.getString("titulo3");
       var texto3 = prefs.getString("texto3");
       var imagen3 = prefs.getString("imagen3");
       
+      document.getElementById('boton1').onclick= "window.location.href=" + url1;
       document.getElementById('titulo1').innerHTML= titulo1;      
 	  document.getElementById('texto1').innerHTML= texto1;
 	  document.getElementById('imagen1').src= imagen1;
-	  console.log(texto1);
-	
+	  
+      document.getElementById('boton2').onclick= "window.location.href=" + url2;
 	  document.getElementById('titulo2').innerHTML= titulo2;
 	  document.getElementById('texto2').innerHTML= texto2;
 	  document.getElementById('imagen2').src= imagen2;	
 	
+	  document.getElementById('boton3').onclick= "window.location.href=" + url3;
 	  document.getElementById('titulo3').innerHTML= titulo3;
 	  document.getElementById('texto3').innerHTML= texto3;
 	  document.getElementById('imagen3').src= imagen3;
