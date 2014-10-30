@@ -89,6 +89,21 @@ button {
     vertical-align: middle;
 }
 
+a.btn{
+    background: linear-gradient(to bottom, #0079c1 0px, #00559d 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #00559d;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font: 12px/24px "BBVA Web Medium",arial bold,sans-serif;
+    height: 30px;
+    padding: 2px 9px 2px 8px;
+    position: relative;
+    text-align: center;
+    text-shadow: none;
+    vertical-align: middle;
+}
+
 </style>
 
 <div class="container">
@@ -98,6 +113,7 @@ button {
       <img id="imagen1" src="" alt="Imagen"/>
       <p id="texto1"></p>
       <button id="boton1" type="button">Acceder</button>
+      <a href="" class="btn">Acceder</a>
     </div>
     <div class="destacadoHome">
       <h2 id="titulo2"></h2>
