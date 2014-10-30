@@ -238,6 +238,7 @@ div.main-menu .menu li > a [class*="icon-"] {
                 var base = "";
                 var barra = "/";
                 var parametros = gadgets.util.getUrlParameters()["parent"].split("/");  
+                console.log(parametros);
                 var indexroot = indice(parametros, rootSite);  
                
                 for (i=0;i<parametros.length;i++)
