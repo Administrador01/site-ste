@@ -127,7 +127,7 @@ div.main-menu .menu li > a [class*="icon-"] {
 		<div class="main-menu">
 			<ul class="menu">
 				<li class="home">
-					<a href="${sessionScope.entorno}">
+					<a href="http://portal-ste.appspot.com/">
 						<img src="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/home.png"/>
 					</a>
 				</li>
