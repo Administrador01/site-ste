@@ -22,6 +22,21 @@
 
     font-weight: normal;
 }
+
+ 
+.btn-atras{
+ 	background-image: url("../img/bot-volver.png");
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    width: 88px;
+	 float: right;
+    margin-top: 20px;
+}
+
+.btn-atras:active {
+    background-image: url("../img/bot-volveron.png");
+}
  
 .header-container .main-logo {
     display: inline-block;
@@ -204,12 +219,12 @@ div.main-menu .menu li > a [class*="icon-"] {
 				</li>
 			</ul>		
 		</div>	
-		<span onclick="window.location.href='../../'" class="btn-atras"></span>
 	</div>
 <!-- end of content -->
 
  <!-- breadcrumbs-->
         <div id="title-crumbs">breadcrumbs</div>
+   		<span onclick="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/return.png" class="btn-atras"></span>
         
         <script>
 
