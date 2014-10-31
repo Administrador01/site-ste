@@ -258,25 +258,26 @@ div.main-menu .menu li > a [class*="icon-"] {
                 var base = "https://sites.google.com/a/bbva.com/portal-ste/documentacion";
                 var barra = "/";
                 var parametros;
-                if (gadgets.util.getUrlParameters()["parent"].split("documentacion")[1]!=undefined)
+                if (gadgets.util.getUrlParameters()["parent"].split("documentacion")[1]!=undefined){
                 	parametros = gadgets.util.getUrlParameters()["parent"].split("portal-ste")[1].split("/");  
-                var indexroot = indice(parametros, rootSite);  
-                var url = "https://sites.google.com/a/bbva.com/portal-ste/documentacion"
+                	var indexroot = indice(parametros, rootSite);  
                
-               	s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'http://portal-ste.appspot.com\' target=\'_parent\'> Home </a> >";
+               		s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'http://portal-ste.appspot.com\' target=\'_parent\'> Home </a> >";
                
                
-                for (i=0;i<parametros.length;i++)
-                {           
-                	if (parametros[i]!="")                   
-                 	  s += "&nbsp;>&nbsp;<a class=\'linkBreadCrumb\' href=\'"+ base + "/" + parametros[i] + "\' target=\'_parent\'>" + parametros[i] + "</a>";
-                 	  if (parametros.length!=i+1)
-                      url+= parametros[i] + "/";
+               		 for (i=0;i<parametros.length;i++)
+               		 {           
+                		if (parametros[i]!="")                   
+                 	  	s += "&nbsp;>&nbsp;<a class=\'linkBreadCrumb\' href=\'"+ base + "/" + parametros[i] + "\' target=\'_parent\'>" + parametros[i] + "</a>";
+                 	  	if (parametros.length!=i+1)
+                      	url+= parametros[i] + "/";
+                	}
                 }
+                	
                 
-                document.getElementById("title-crumbs").innerHTML = s;  
+               	 document.getElementById("title-crumbs").innerHTML = s;  
                 
-                 var prefs = new gadgets.Prefs();
+                var prefs = new gadgets.Prefs();
       
       			var url = prefs.getString("url");
                 
