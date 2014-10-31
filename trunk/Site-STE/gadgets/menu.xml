@@ -225,7 +225,7 @@ div.main-menu .menu li > a [class*="icon-"] {
 
  <!-- breadcrumbs-->
         <div id="title-crumbs">breadcrumbs</div>
-   		<span onclick="window.location.href='../../'" class="btn-atras"></span>
+   		<a id="btn-atras"  href="" class="btn-atras"></a>
         
         <script>
 
@@ -254,8 +254,11 @@ div.main-menu .menu li > a [class*="icon-"] {
                 var i,j,k = 0;
                 var base = "https://sites.google.com/a/bbva.com/portal-ste/documentacion";
                 var barra = "/";
-                var parametros = gadgets.util.getUrlParameters()["parent"].split("documentacion")[1].split("/");  
+                var parametros;
+                if (gadgets.util.getUrlParameters()["parent"].split("documentacion")[1]!=undefined)
+                	parametros = gadgets.util.getUrlParameters()["parent"].split("documentacion")[1].split("/");  
                 var indexroot = indice(parametros, rootSite);  
+                var url = "https://sites.google.com/a/bbva.com/portal-ste/documentacion/"
                
                	s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'http://portal-ste.appspot.com\' target=\'_parent\'> Home </a> >";
                	s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'https://sites.google.com/a/bbva.com/portal-ste/documentacion\' target=\'_parent\'> Documentación </a>";
@@ -265,10 +268,15 @@ div.main-menu .menu li > a [class*="icon-"] {
                 {           
                 	if (parametros[i]!="")                   
                  	  s += "&nbsp;>&nbsp;<a class=\'linkBreadCrumb\' href=\'"+ base + "/" + parametros[i] + "\' target=\'_parent\'>" + parametros[i] + "</a>";
-                       
+                      url+= parametros[i] + "/";
                 }
                 
                 document.getElementById("title-crumbs").innerHTML = s;  
+                
+                if (s!="")
+               		 document.getElementById("btn-atras").href = url;
+               	else
+               		  document.getElementById("btn-atras").href = "https://sites.google.com/a/bbva.com/portal-ste/";
                
         }
 	
