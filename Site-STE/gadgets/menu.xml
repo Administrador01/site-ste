@@ -259,13 +259,15 @@ div.main-menu .menu li > a [class*="icon-"] {
                	s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'http://portal-ste.appspot.com\' target=\'_parent\'> Home </a> >";
                	s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'https://sites.google.com/a/bbva.com/portal-ste/documentacion\' target=\'_parent\'> Documentación </a> >";
                
+                console.log("9Cadena: " + s);  
+               
                 for (i=0;i<parametros.length;i++)
                 {           
                 	if (parametros[i]!="")                   
-                 	  s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'"+ base + "/" + parametro[i] + "\' target=\'_parent\'>" + parametros[i] + "</a> >";
+                 	  s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'"+ base + "/" + parametros[i] + "\' target=\'_parent\'>" + parametros[i] + "</a> >";
                        
                 }
-                 console.log("7Cadena: " + s);  
+                
                 document.getElementById("title-crumbs").innerHTML = s;  
                
         }
