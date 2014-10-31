@@ -256,12 +256,11 @@ div.main-menu .menu li > a [class*="icon-"] {
                 var barra = "/";
                 var parametros;
                 if (gadgets.util.getUrlParameters()["parent"].split("documentacion")[1]!=undefined)
-                	parametros = gadgets.util.getUrlParameters()["parent"].split("documentacion")[1].split("/");  
+                	parametros = gadgets.util.getUrlParameters()["parent"].split("portal-ste")[1].split("/");  
                 var indexroot = indice(parametros, rootSite);  
                 var url = "https://sites.google.com/a/bbva.com/portal-ste/documentacion"
                
                	s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'http://portal-ste.appspot.com\' target=\'_parent\'> Home </a> >";
-               	s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'https://sites.google.com/a/bbva.com/portal-ste/documentacion\' target=\'_parent\'> Documentación </a>";
                
                
                 for (i=0;i<parametros.length;i++)
