@@ -204,6 +204,7 @@ div.main-menu .menu li > a [class*="icon-"] {
 				</li>
 			</ul>		
 		</div>	
+		<span onclick="window.location.href='../../'" class="btn-atras"></span>
 	</div>
 <!-- end of content -->
 

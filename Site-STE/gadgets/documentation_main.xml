@@ -14,7 +14,19 @@
 
 <style type="text/css">
  
+.btn-atras{
+ 	background-image: url("../img/bot-volver.png");
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    width: 88px;
+	 float: right;
+    margin-top: 20px;
+}
 
+.btn-atras:active {
+    background-image: url("../img/bot-volveron.png");
+}
 
 .destacadoHome {
     background-color: #fbfbfb;
