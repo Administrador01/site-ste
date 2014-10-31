@@ -224,7 +224,7 @@ div.main-menu .menu li > a [class*="icon-"] {
 <!-- end of content -->
 
  <!-- breadcrumbs-->
-        <div id="title-crumbs">breadcrumbs</div>
+        <div id="title-crumbs"><a target="_parent" href="http://portal-ste.appspot.com" class="linkBreadCrumb"> Home </a></div>
    		<a id="btn-atras" target="_parent" href="" class="btn-atras"></a>
         
         <script>
