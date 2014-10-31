@@ -225,7 +225,7 @@ div.main-menu .menu li > a [class*="icon-"] {
 
  <!-- breadcrumbs-->
         <div id="title-crumbs"><a target="_parent" href="http://portal-ste.appspot.com" class="linkBreadCrumb"> Home </a></div>
-   		<a id="btn-atras" target="_parent" href="" class="btn-atras"></a>
+   		<a id="btn-atras" target="_parent" href="http://portal-ste.appspot.com/" class="btn-atras"></a>
         
         <script>
 
@@ -245,7 +245,7 @@ div.main-menu .menu li > a [class*="icon-"] {
         }
 	
 
-	 function showBreadcrumbs()
+	 function showBreadcrumbs()	
         {
                 // Construct the breadcrumb string
                 //var rootSite = prefs.getString("VarrootSite");
