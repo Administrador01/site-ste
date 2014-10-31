@@ -25,7 +25,7 @@
 
  
 .btn-atras{
- 	background-image: url("../img/bot-volver.png");
+ 	background-image: url("https://site-ste.googlecode.com/svn/trunk/Site-STE/img/bot-volver.png");
     cursor: pointer;
     display: inline-block;
     height: 30px;
@@ -35,7 +35,7 @@
 }
 
 .btn-atras:active {
-    background-image: url("../img/bot-volveron.png");
+    background-image: url("https://site-ste.googlecode.com/svn/trunk/Site-STE/img/bot-volveron.png");
 }
  
 .header-container .main-logo {
@@ -224,7 +224,7 @@ div.main-menu .menu li > a [class*="icon-"] {
 
  <!-- breadcrumbs-->
         <div id="title-crumbs">breadcrumbs</div>
-   		<span onclick="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/return.png" class="btn-atras"></span>
+   		<span onclick="window.location.href='../../'" class="btn-atras"></span>
         
         <script>
 
@@ -262,10 +262,10 @@ div.main-menu .menu li > a [class*="icon-"] {
                 for (i=0;i<parametros.length;i++)
                 {           
                 	if (parametros[i]!="")                   
-                 	  s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'"+ base + "/" + parametros[i] + "\' target=\'_parent\'>" + parametros[i] + "</a> >";
+                 	  s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'"+ base + "/" + parametro[i] + "\' target=\'_parent\'>" + parametros[i] + "</a> >";
                        
                 }
-                 console.log("8Cadena: " + s);  
+                 console.log("7Cadena: " + s);  
                 document.getElementById("title-crumbs").innerHTML = s;  
                
         }
