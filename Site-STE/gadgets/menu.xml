@@ -225,7 +225,7 @@ div.main-menu .menu li > a [class*="icon-"] {
 
  <!-- breadcrumbs-->
         <div id="title-crumbs">breadcrumbs</div>
-   		<a id="btn-atras"  href="" class="btn-atras"></a>
+   		<a id="btn-atras" targer="_parent" href="" class="btn-atras"></a>
         
         <script>
 
