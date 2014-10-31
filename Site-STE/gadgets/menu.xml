@@ -238,7 +238,6 @@ div.main-menu .menu li > a [class*="icon-"] {
                 var base = "https://sites.google.com/a/bbva.com/portal-ste/documentacion";
                 var barra = "/";
                 var parametros = gadgets.util.getUrlParameters()["parent"].split("documentacion")[1].split("/");  
-                console.log(parametros);
                 var indexroot = indice(parametros, rootSite);  
                
                	s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'http://portal-ste.appspot.com\' target=\'_parent\'> Home </a> >";
@@ -247,10 +246,10 @@ div.main-menu .menu li > a [class*="icon-"] {
                 for (i=0;i<parametros.length;i++)
                 {           
                 	if (parametros[i]!="")                   
-                 	  s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'"+ base + "/" + parametro[i] "\' target=\'_parent\'>" + parametros[i] + "</a> >";
+                 	  s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'"+ base + "/" + parametro[i] + "\' target=\'_parent\'>" + parametros[i] + "</a> >";
                        
                 }
-                 console.log("6Cadenita: " + s);  
+                 console.log("7Cadena: " + s);  
                 document.getElementById("title-crumbs").innerHTML = s;  
                
         }
