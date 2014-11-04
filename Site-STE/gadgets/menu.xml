@@ -260,7 +260,7 @@ div.main-menu .menu li > a [class*="icon-"] {
                 var parametros;
                 s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'http://portal-ste.appspot.com\' target=\'_parent\'> Home </a> >";
                 
-                if (gadgets.util.getUrlParameters()["parent"].split("documentacion")[1]!=undefined){
+                if (gadgets.util.getUrlParameters()["parent"].split("home")[1]!=undefined){
                 	parametros = gadgets.util.getUrlParameters()["parent"].split("portal-ste")[1].split("/");  
                 	var indexroot = indice(parametros, rootSite);  
                
