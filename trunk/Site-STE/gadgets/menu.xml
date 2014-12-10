@@ -191,7 +191,7 @@ div.main-menu .menu li > a [class*="icon-"] {
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline" id="EnlacePruebas" href="#">
+					<a class="no-underline" id="EnlacePruebas" href="">
 						<span class="icon-24 pruebas-24x"></span>
 						<span class="menu-title">Pruebas</span>
 					</a>
@@ -212,7 +212,7 @@ div.main-menu .menu li > a [class*="icon-"] {
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline" id="EnlaceSoporte" href="#">
+					<a class="no-underline" id="EnlaceSoporte" target="_parent" href="">
 						<span class="icon-24 soporte-24x"></span>
 						<span class="menu-title">Soporte</span>
 					</a>
