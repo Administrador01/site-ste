@@ -8,7 +8,7 @@
 <UserPref name="url" display_name="URL Volver:" default_value=""/>
 
 
-<Content type="html"><![CDATA[
+<Content type="html">
 
 <style type="text/css">
 
@@ -297,5 +297,5 @@ showBreadcrumbs();
 </script>
         
 
-]]></Content>
+></Content>
 </Module></link>
