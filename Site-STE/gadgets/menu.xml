@@ -181,14 +181,14 @@ div.main-menu .menu li > a [class*="icon-"] {
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline"  href="#">
+					<a class="no-underline"  href="http://portal-ste.appspot.com/clientes.do">
 						<span class="icon-24 clientes-24x"></span> 
 						<span class="menu-title">Clientes</span>
 					</a>
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline" href="#">
+					<a class="no-underline" href="http://portal-ste.appspot.com/pruebas.do">
 						<span class="icon-24 pruebas-24x"></span>
 						<span class="menu-title">Pruebas</span>
 					</a>
@@ -209,7 +209,7 @@ div.main-menu .menu li > a [class*="icon-"] {
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline" href="#">
+					<a class="no-underline" href="http://portal-ste.appspot.com/soporte.do">
 						<span class="icon-24 soporte-24x"></span>
 						<span class="menu-title">Soporte</span>
 					</a>
