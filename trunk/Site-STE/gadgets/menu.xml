@@ -292,7 +292,7 @@ div.main-menu .menu li > a [class*="icon-"] {
                 
               	document.getElementById("btn-atras").href = url;
               	
-              	var urlHome =  prefs.getString("url");
+              	var urlHome =  prefs.getString("urlHome");
               	
               	document.getElementById("EnlaceHome").href = urlHome;
               
