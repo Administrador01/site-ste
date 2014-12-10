@@ -8,7 +8,7 @@
 <UserPref name="url" display_name="URL Volver:" default_value=""/>
 
 
-<Content type="html">
+<Content type="html"><![CDATA[
 
 <style type="text/css">
 
@@ -181,14 +181,14 @@ div.main-menu .menu li > a [class*="icon-"] {
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline"  href="http://pro-dot-portal-ste.appspot.com/clientes.do">
+					<a class="no-underline"  href="#">
 						<span class="icon-24 clientes-24x"></span> 
 						<span class="menu-title">Clientes</span>
 					</a>
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline" href="http://pro-dot-portal-ste.appspot.com/pruebas.do">
+					<a class="no-underline" href="#">
 						<span class="icon-24 pruebas-24x"></span>
 						<span class="menu-title">Pruebas</span>
 					</a>
@@ -209,14 +209,14 @@ div.main-menu .menu li > a [class*="icon-"] {
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline" id="EnlaceSoporte" href="http://pro-dot-portal-ste.appspot.com/soporte.do">
+					<a class="no-underline" href="#">
 						<span class="icon-24 soporte-24x"></span>
 						<span class="menu-title">Soporte</span>
 					</a>
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline" id="EnlaceDocumentacion" href="#">
+					<a class="no-underline" href="#">
 						<span class="icon-24 documentacion-24x"></span>
 						<span class="menu-title">Documentación</span>
 					</a>
@@ -297,5 +297,5 @@ showBreadcrumbs();
 </script>
         
 
-</Content>
+]]></Content>
 </Module>
