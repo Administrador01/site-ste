@@ -209,14 +209,14 @@ div.main-menu .menu li > a [class*="icon-"] {
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline" "EnlaceSoporte" href="http://pro-dot-portal-ste.appspot.com/soporte.do">
+					<a class="no-underline" id="EnlaceSoporte" href="http://pro-dot-portal-ste.appspot.com/soporte.do">
 						<span class="icon-24 soporte-24x"></span>
 						<span class="menu-title">Soporte</span>
 					</a>
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline" id= "EnlaceDocumentacion" href="#">
+					<a class="no-underline" id="EnlaceDocumentacion" href="#">
 						<span class="icon-24 documentacion-24x"></span>
 						<span class="menu-title">Documentación</span>
 					</a>
