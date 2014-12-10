@@ -6,6 +6,7 @@
 </ModulePrefs>  
 
 <UserPref name="url" display_name="URL Volver:" default_value=""/>
+<UserPref name="urlHome" display_name="URL Home:" default_value=""/>
 <UserPref name="urlCliente" display_name="URL Cliente:" default_value=""/>
 <UserPref name="urlSoporte" display_name="URL Soporte:" default_value=""/>
 <UserPref name="urlPruebas" display_name="URL Pruebas:" default_value=""/>
@@ -179,7 +180,7 @@ div.main-menu .menu li > a [class*="icon-"] {
 		<div class="main-menu">
 			<ul class="menu">
 				<li class="home">
-					<a href="http://portal-ste.appspot.com/">
+					<a id="EnlaceHome" href="">
 						<img src="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/home.png"/>
 					</a>
 				</li>
@@ -290,6 +291,10 @@ div.main-menu .menu li > a [class*="icon-"] {
       			var url = prefs.getString("url");
                 
               	document.getElementById("btn-atras").href = url;
+              	
+              	var urlHome =  prefs.getString("url");
+              	
+              	document.getElementById("EnlaceHome").href = urlHome;
               
        			var urlSoporte = prefs.getString("urlSoporte");
                 
