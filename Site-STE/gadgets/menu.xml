@@ -5,7 +5,7 @@
   <Require feature="setprefs" />  
 </ModulePrefs>  
 
-<UserPref name="url" display_name="URL Volver:" default_value="" />
+<UserPref name="url" display_name="URL Volver:" default_value=""/>
 
 
 <Content type="html"><![CDATA[
@@ -250,13 +250,15 @@ div.main-menu .menu li > a [class*="icon-"] {
 
 	 function showBreadcrumbs()	
         {
+                // Construct the breadcrumb string
+                //var rootSite = prefs.getString("VarrootSite");
                 var rootSite = "home";
                 var s ="";
                 var i,j,k = 0;
                 var base = "https://sites.google.com/a/bbva.com/portal-ste/documentacion";
                 var barra = "/";
                 var parametros;
-                s += "&nbsp;<a class=\'linkBreadCrumb\' href='http://portal-ste.appspot.com\' target=\'_parent\'> Home </a>";
+                s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'http://portal-ste.appspot.com\' target=\'_parent\'> Home </a>";
                 
                 if (gadgets.util.getUrlParameters()["parent"].split("home")[1]!=undefined){
                 	parametros = gadgets.util.getUrlParameters()["parent"].split("home")[1].split("/");  
@@ -285,7 +287,9 @@ div.main-menu .menu li > a [class*="icon-"] {
                 
               	document.getElementById("btn-atras").href = url;
               
-
+       			var urlSoporte = prefs.getString("urlSoporte");
+                
+              	document.getElementById("EnlaceSoporte").href = urlSoporte;
                
         }
 	
@@ -296,4 +300,4 @@ showBreadcrumbs();
         
 
 ]]></Content>
- />
+</Module>
