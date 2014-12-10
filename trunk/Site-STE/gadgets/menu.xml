@@ -6,6 +6,9 @@
 </ModulePrefs>  
 
 <UserPref name="url" display_name="URL Volver:" default_value=""/>
+<UserPref name="urlSoporte" display_name="URL Soporte:" default_value=""/>
+<UserPref name="urlPruebas" display_name="URL Pruebas:" default_value=""/>
+
 
 
 <Content type="html"><![CDATA[
@@ -188,7 +191,7 @@ div.main-menu .menu li > a [class*="icon-"] {
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline" href="http://portal-ste.appspot.com/pruebas.do">
+					<a class="no-underline" id="EnlacePruebas" href="#">
 						<span class="icon-24 pruebas-24x"></span>
 						<span class="menu-title">Pruebas</span>
 					</a>
@@ -209,7 +212,7 @@ div.main-menu .menu li > a [class*="icon-"] {
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline" href="http://portal-ste.appspot.com/soporte.do">
+					<a class="no-underline" id="EnlaceSoporte" href="#">
 						<span class="icon-24 soporte-24x"></span>
 						<span class="menu-title">Soporte</span>
 					</a>
@@ -290,6 +293,10 @@ div.main-menu .menu li > a [class*="icon-"] {
        			var urlSoporte = prefs.getString("urlSoporte");
                 
               	document.getElementById("EnlaceSoporte").href = urlSoporte;
+              	
+              	var urlPruebas = prefs.getString("urlPruebas");
+                
+              	document.getElementById("EnlacePruebas").href = urlPruebas;
                
         }
 	
