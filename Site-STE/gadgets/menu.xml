@@ -271,10 +271,12 @@ div.main-menu .menu li > a [class*="icon-"] {
                
                
                		if (parametros!=undefined){
+                     String urldir = base;
                			for (i=0;i<parametros.length;i++)
 	               		 {           
 	                		if (parametros[i]!="")                   
-	                 	  	s += "&nbsp;>&nbsp;<a class=\'linkBreadCrumb\' href=\'"+ base + "/" + parametros[i] + "\' target=\'_parent\'>" + parametros[i] + "</a>";
+                         urldir = urldir + "/" + parametros[i];
+	                 	  	s += "&nbsp;>&nbsp;<a class=\'linkBreadCrumb\' href=\'"+ urldir+ "\' target=\'_parent\'>" + parametros[i] + "</a>";
 	                 	  	if (parametros.length!=i+1)
 	                      	url+= parametros[i] + "/";
 	                	}
