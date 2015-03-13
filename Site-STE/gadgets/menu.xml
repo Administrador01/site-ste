@@ -276,7 +276,7 @@ div.main-menu .menu li > a [class*="icon-"] {
 	               		 {           
 	                		if (parametros[i]!="")                   
                          urldir = urldir + "/" + parametros[i];
-	                 	  	s += "&nbsp;>&nbsp;<a class=\'linkBreadCrumb\' href=\'"+ urldir+ "\' target=\'_parent\'>" + parametros[i] + "</a>";
+	                 	  	s += "&nbsp;>&nbsp;<a class=\'linkBreadCrumb\' href="\'"+ urldir+"\'" target=\'_parent\'>" + parametros[i] + "</a>";
 	                 	  	if (parametros.length!=i+1)
 	                      	url+= parametros[i] + "/";
 	                	}
