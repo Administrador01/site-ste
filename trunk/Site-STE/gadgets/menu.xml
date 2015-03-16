@@ -6,9 +6,14 @@
 </ModulePrefs>  
 
 <UserPref name="url" display_name="URL Volver:" default_value=""/>
+<UserPref name="urlHome" display_name="URL Home:" default_value=""/>
+<UserPref name="urlCliente" display_name="URL Cliente:" default_value=""/>
+<UserPref name="urlSoporte" display_name="URL Soporte:" default_value=""/>
+<UserPref name="urlPruebas" display_name="URL Pruebas:" default_value=""/>
 
 
-<Content type="html">
+
+<Content type="html"><![CDATA[
 
 <style type="text/css">
 
@@ -175,20 +180,20 @@ div.main-menu .menu li > a [class*="icon-"] {
 		<div class="main-menu">
 			<ul class="menu">
 				<li class="home">
-					<a href="http://portal-ste.appspot.com/">
+					<a id="EnlaceHome" href="">
 						<img src="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/home.png"/>
 					</a>
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline"  href="http://pro-dot-portal-ste.appspot.com/clientes.do">
+					<a class="no-underline"  id="EnlaceCliente" href="">
 						<span class="icon-24 clientes-24x"></span> 
 						<span class="menu-title">Clientes</span>
 					</a>
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline" href="http://pro-dot-portal-ste.appspot.com/pruebas.do">
+					<a class="no-underline" id="EnlacePruebas" target="_parent" href="">
 						<span class="icon-24 pruebas-24x"></span>
 						<span class="menu-title">Pruebas</span>
 					</a>
@@ -209,14 +214,14 @@ div.main-menu .menu li > a [class*="icon-"] {
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline" "EnlaceSoporte" href="http://pro-dot-portal-ste.appspot.com/soporte.do">
+					<a class="no-underline" id="EnlaceSoporte" target="_parent" href="">
 						<span class="icon-24 soporte-24x"></span>
 						<span class="menu-title">Soporte</span>
 					</a>
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline" id= "EnlaceDocumentacion" href="#">
+					<a class="no-underline" href="#">
 						<span class="icon-24 documentacion-24x"></span>
 						<span class="menu-title">Documentación</span>
 					</a>
@@ -263,7 +268,7 @@ div.main-menu .menu li > a [class*="icon-"] {
                 if (gadgets.util.getUrlParameters()["parent"].split("home")[1]!=undefined){
                 	parametros = gadgets.util.getUrlParameters()["parent"].split("home")[1].split("/");  
                 	var indexroot = indice(parametros, rootSite);  
-                
+               
                
                		if (parametros!=undefined){
                			for (i=0;i<parametros.length;i++)
@@ -286,8 +291,22 @@ div.main-menu .menu li > a [class*="icon-"] {
       			var url = prefs.getString("url");
                 
               	document.getElementById("btn-atras").href = url;
+              	
+              	var urlHome =  prefs.getString("urlHome");
+              	
+              	document.getElementById("EnlaceHome").href = urlHome;
               
-
+       			var urlSoporte = prefs.getString("urlSoporte");
+                
+              	document.getElementById("EnlaceSoporte").href = urlSoporte;
+              	
+              	var urlPruebas = prefs.getString("urlPruebas");
+                
+              	document.getElementById("EnlacePruebas").href = urlPruebas;
+              	
+              	var urlCliente = prefs.getString("urlCliente");
+                
+              	document.getElementById("EnlaceCliente").href = urlCliente;
                
         }
 	
@@ -297,6 +316,5 @@ showBreadcrumbs();
 </script>
         
 
-</Content>
+]]></Content>
 </Module>
-
