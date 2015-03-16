@@ -269,12 +269,13 @@ div.main-menu .menu li > a [class*="icon-"] {
                 	parametros = gadgets.util.getUrlParameters()["parent"].split("home")[1].split("/");  
                 	var indexroot = indice(parametros, rootSite);  
                
-               
+               		var urldir = "";
                		if (parametros!=undefined){
                			for (i=0;i<parametros.length;i++)
 	               		 {           
+	               		 	urldir = urldir +"/"+parametros[i];
 	                		if (parametros[i]!="")                   
-	                 	  	s += "&nbsp;>&nbsp;<a class=\'linkBreadCrumb\' href=\'"+ base + "/" + parametros[i] + "\' target=\'_parent\'>" + parametros[i] + "</a>";
+	                 	  	s += "&nbsp;>&nbsp;<a class=\'linkBreadCrumb\' href=\'"+ base + /*"/" + parametros[i]*/urldir + "\' target=\'_parent\'>" + parametros[i] + "</a>";
 	                 	  	if (parametros.length!=i+1)
 	                      	url+= parametros[i] + "/";
 	                	}
