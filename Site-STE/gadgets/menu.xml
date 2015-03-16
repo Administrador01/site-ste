@@ -275,9 +275,9 @@ div.main-menu .menu li > a [class*="icon-"] {
                			for (i=0;i<parametros.length;i++)
 	               		 {           
 	                		if (parametros[i]!=""){                 
-                         urldir = urldir + "/" + parametros[i];
-                         s += "&nbsp;>&nbsp;<a class=\'linkBreadCrumb\' href="\'"+ urldir+"\'" target=\'_parent\'>" + parametros[i] + "</a>";
-                      }
+                        	 urldir = urldir + "/" + parametros[i];
+                        	 s += "&nbsp;>&nbsp;<a class=\'linkBreadCrumb\' href="\'"+ url+"\'" target=\'_parent\'>" + parametros[i] + "</a>";
+                 		    }
 	                 	  	if (parametros.length!=i+1) url+= parametros[i] + "/";
 	                	}
                		}
