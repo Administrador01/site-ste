@@ -6,14 +6,9 @@
 </ModulePrefs>  
 
 <UserPref name="url" display_name="URL Volver:" default_value=""/>
-<UserPref name="urlHome" display_name="URL Home:" default_value=""/>
-<UserPref name="urlCliente" display_name="URL Cliente:" default_value=""/>
-<UserPref name="urlSoporte" display_name="URL Soporte:" default_value=""/>
-<UserPref name="urlPruebas" display_name="URL Pruebas:" default_value=""/>
 
 
-
-<Content type="html"><![CDATA[
+<Content type="html">
 
 <style type="text/css">
 
@@ -180,20 +175,20 @@ div.main-menu .menu li > a [class*="icon-"] {
 		<div class="main-menu">
 			<ul class="menu">
 				<li class="home">
-					<a id="EnlaceHome" href="">
+					<a href="http://portal-ste.appspot.com/">
 						<img src="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/home.png"/>
 					</a>
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline"  id="EnlaceCliente" href="">
+					<a class="no-underline"  href="http://pro-dot-portal-ste.appspot.com/clientes.do">
 						<span class="icon-24 clientes-24x"></span> 
 						<span class="menu-title">Clientes</span>
 					</a>
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline" id="EnlacePruebas" target="_parent" href="">
+					<a class="no-underline" href="http://pro-dot-portal-ste.appspot.com/pruebas.do">
 						<span class="icon-24 pruebas-24x"></span>
 						<span class="menu-title">Pruebas</span>
 					</a>
@@ -214,14 +209,14 @@ div.main-menu .menu li > a [class*="icon-"] {
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline" id="EnlaceSoporte" target="_parent" href="">
+					<a class="no-underline" "EnlaceSoporte" href="http://pro-dot-portal-ste.appspot.com/soporte.do">
 						<span class="icon-24 soporte-24x"></span>
 						<span class="menu-title">Soporte</span>
 					</a>
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline" href="#">
+					<a class="no-underline" id= "EnlaceDocumentacion" href="#">
 						<span class="icon-24 documentacion-24x"></span>
 						<span class="menu-title">Documentación</span>
 					</a>
@@ -260,7 +255,7 @@ div.main-menu .menu li > a [class*="icon-"] {
                 var rootSite = "home";
                 var s ="";
                 var i,j,k = 0;
-                var base = "https://sites.google.com/a/bbva.com/portal-ste/home";
+                var base = "https://sites.google.com/a/bbva.com/portal-ste/documentacion";
                 var barra = "/";
                 var parametros;
                 s += "&nbsp;<a class=\'linkBreadCrumb\' href=\'http://portal-ste.appspot.com\' target=\'_parent\'> Home </a>";
@@ -268,17 +263,15 @@ div.main-menu .menu li > a [class*="icon-"] {
                 if (gadgets.util.getUrlParameters()["parent"].split("home")[1]!=undefined){
                 	parametros = gadgets.util.getUrlParameters()["parent"].split("home")[1].split("/");  
                 	var indexroot = indice(parametros, rootSite);  
-               
+                
                
                		if (parametros!=undefined){
-                     String urldir = base;
                			for (i=0;i<parametros.length;i++)
 	               		 {           
-	                		if (parametros[i]!=""){                 
-                        	 urldir = urldir + "/" + parametros[i];
-                        	 s += "&nbsp;>&nbsp;<a class=\'linkBreadCrumb\' href="\'"+ urldir+"\'" target=\'_parent\'>" + parametros[i] + "</a>";
-                 		     }
-	                 	  	if (parametros.length!=i+1) url+= parametros[i] + "/";
+	                		if (parametros[i]!="")                   
+	                 	  	s += "&nbsp;>&nbsp;<a class=\'linkBreadCrumb\' href=\'"+ base + "/" + parametros[i] + "\' target=\'_parent\'>" + parametros[i] + "</a>";
+	                 	  	if (parametros.length!=i+1)
+	                      	url+= parametros[i] + "/";
 	                	}
                		}
                
@@ -286,29 +279,15 @@ div.main-menu .menu li > a [class*="icon-"] {
                 }
                 	
                 
-               	document.getElementById("title-crumbs").innerHTML = s;  
+               	 document.getElementById("title-crumbs").innerHTML = s;  
                 
                 var prefs = new gadgets.Prefs();
       
       			var url = prefs.getString("url");
                 
               	document.getElementById("btn-atras").href = url;
-              	
-              	var urlHome =  prefs.getString("urlHome");
-              	
-              	document.getElementById("EnlaceHome").href = urlHome;
               
-       			var urlSoporte = prefs.getString("urlSoporte");
-                
-              	document.getElementById("EnlaceSoporte").href = urlSoporte;
-              	
-              	var urlPruebas = prefs.getString("urlPruebas");
-                
-              	document.getElementById("EnlacePruebas").href = urlPruebas;
-              	
-              	var urlCliente = prefs.getString("urlCliente");
-                
-              	document.getElementById("EnlaceCliente").href = urlCliente;
+
                
         }
 	
@@ -318,5 +297,6 @@ showBreadcrumbs();
 </script>
         
 
-]]></Content>
+</Content>
 </Module>
+
