@@ -257,7 +257,7 @@ div.main-menu .menu li > a [class*="icon-"] {
         {
                 // Construct the breadcrumb string
                 //var rootSite = prefs.getString("VarrootSite");
-                /*var rootSite = "home";
+                var rootSite = "home";
                 var s ="";
                 var i,j,k = 0;
                 var base = "https://sites.google.com/a/bbva.com/portal-ste/home";
@@ -276,19 +276,14 @@ div.main-menu .menu li > a [class*="icon-"] {
 	               		 {           
 	                		if (parametros[i]!=""){                 
                         	 urldir = urldir + "/" + parametros[i];
-                        	 s += "&nbsp;>&nbsp;<a class=\'linkBreadCrumb\' href="\'"+ url+"\'" target=\'_parent\'>" + parametros[i] + "</a>";
-                 		    }
+                        	 s += "&nbsp;>&nbsp;<a class=\'linkBreadCrumb\' href="\'"+ urldir+"\'" target=\'_parent\'>" + parametros[i] + "</a>";
+                 		     }
 	                 	  	if (parametros.length!=i+1) url+= parametros[i] + "/";
 	                	}
                		}
                
                		 
-                }*/
-                
-                
-                var s ="";
-                
-                var url = document.location.href;
+                }
                 	
                 
                	document.getElementById("title-crumbs").innerHTML = s;  
