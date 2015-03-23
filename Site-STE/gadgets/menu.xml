@@ -186,41 +186,35 @@ div.main-menu .menu li > a [class*="icon-"] {
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline"  id="EnlaceCliente" href="">
+					<a class="no-underline"  id="EnlaceCliente" href="" target="_parent">
 						<span class="icon-24 clientes-24x"></span> 
 						<span class="menu-title">Clientes</span>
 					</a>
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline" id="EnlacePruebas" href="">
+					<a class="no-underline" id="EnlacePruebas" href="" target="_parent">
 						<span class="icon-24 pruebas-24x"></span>
 						<span class="menu-title">Pruebas</span>
 					</a>
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline" onclick="linkServ()" href="">
+					<a class="no-underline" href="http://portal-ste.appspot.com/impServicios.do" target="_parent">
 						<span class="icon-24 servicios-24x"></span>
 						<span class="menu-title">Servicios</span>
 					</a>
-					
-					<script>
-						function linkServ() {
-						    window.location.assign("https://portal-ste.appspot.com/impServicios.do")
-						}
-					</script>
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline" href="https://portal-ste.appspot.com/informes.do" target="_parent">
+					<a class="no-underline" href="http://portal-ste.appspot.com/informes.do" target="_parent">
 						<span class="icon-24 informes-24x"></span>
 						<span class="menu-title">Informes</span>
 					</a>
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline" id="EnlaceSoporte" href="">
+					<a class="no-underline" id="EnlaceSoporte" href="" target="_parent">
 						<span class="icon-24 soporte-24x"></span>
 						<span class="menu-title">Soporte</span>
 					</a>
