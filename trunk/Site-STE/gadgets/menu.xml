@@ -200,10 +200,16 @@ div.main-menu .menu li > a [class*="icon-"] {
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline" href="http://portal-ste.appspot.com/impServicios.do">
+					<a class="no-underline" onclik="linkServ()">
 						<span class="icon-24 servicios-24x"></span>
 						<span class="menu-title">Servicios</span>
 					</a>
+					
+					<script>
+						function linkServ() {
+						    window.location.assign("http://portal-ste.appspot.com/impServicios.do)
+						}
+					</script>
 				</li>
 				
 				<li class="menu">
