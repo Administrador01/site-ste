@@ -207,13 +207,13 @@ div.main-menu .menu li > a [class*="icon-"] {
 					
 					<script>
 						function linkServ() {
-						    window.location.assign("http://portal-ste.appspot.com/impServicios.do)
+						    window.location.assign("https://portal-ste.appspot.com/impServicios.do")
 						}
 					</script>
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline" href="http://portal-ste.appspot.com/informes.do">
+					<a class="no-underline" href="https://portal-ste.appspot.com/informes.do" target="_parent">
 						<span class="icon-24 informes-24x"></span>
 						<span class="menu-title">Informes</span>
 					</a>
