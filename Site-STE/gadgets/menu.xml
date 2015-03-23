@@ -200,7 +200,7 @@ div.main-menu .menu li > a [class*="icon-"] {
 				</li>
 				
 				<li class="menu">
-					<a class="no-underline" onclick="linkServ()">
+					<a class="no-underline" onclick="linkServ()" href="">
 						<span class="icon-24 servicios-24x"></span>
 						<span class="menu-title">Servicios</span>
 					</a>
