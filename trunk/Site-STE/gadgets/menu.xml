@@ -198,13 +198,7 @@ div.main-menu .menu li > a [class*="icon-"] {
 						<span class="menu-title">Pruebas</span>
 					</a>
 				</li>
-				
-				<li class="menu">
-					<a class="no-underline" href="http://portal-ste.appspot.com/impServicios.do" target="_parent">
-						<span class="icon-24 servicios-24x"></span>
-						<span class="menu-title">Servicios</span>
-					</a>
-				</li>
+
 				
 				<li class="menu">
 					<a class="no-underline" href="http://portal-ste.appspot.com/informes.do" target="_parent">
