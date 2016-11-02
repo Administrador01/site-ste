@@ -19,21 +19,21 @@
 
 @font-face {
     font-family: "BBVA Web Book";
-    src: url(https://site-ste.googlecode.com/svn/trunk/Site-STE/fonts/WebBook/bbvaweb-book-ttf.ttf);
+    src: url(https://raw.githubusercontent.com/Administrador01/site-ste/master/Site-STE/fonts/WebBook/bbvaweb-book-ttf.ttf);
 
     font-weight: normal;
 }
 
 @font-face {
     font-family: "BBVA Web Light";
-    src: url(https://site-ste.googlecode.com/svn/trunk/Site-STE/fonts/WebLight/bbvaweb-light-ttf.ttf);
+    src: url(https://raw.githubusercontent.com/Administrador01/site-ste/master/Site-STE/fonts/WebLight/bbvaweb-light-ttf.ttf);
 
     font-weight: normal;
 }
 
  
 .btn-atras{
- 	background-image: url("https://site-ste.googlecode.com/svn/trunk/Site-STE/img/bot-volver.png");
+ 	background-image: url("https://raw.githubusercontent.com/Administrador01/site-ste/master/Site-STE/img/bot-volver.png");
     cursor: pointer;
     display: inline-block;
     height: 30px;
@@ -43,7 +43,7 @@
 }
 
 .btn-atras:active {
-    background-image: url("https://site-ste.googlecode.com/svn/trunk/Site-STE/img/bot-volveron.png");
+    background-image: url("https://raw.githubusercontent.com/Administrador01/site-ste/master/Site-STE/img/bot-volveron.png");
 }
  
 .header-container .main-logo {
@@ -105,7 +105,7 @@
 }
 
 div.main-menu .menu li > a [class*="icon-"] {
-    background-image: url("https://site-ste.googlecode.com/svn/trunk/Site-STE/img/sprite-white-x24.png");
+    background-image: url("https://raw.githubusercontent.com/Administrador01/site-ste/master/Site-STE/img/sprite-white-x24.png");
     margin-right: 10px;
 }
 .clientes-24x {
@@ -176,12 +176,12 @@ div.main-menu .menu li > a [class*="icon-"] {
 
 
 <div class="header-container">
-		<img class="main-logo" src="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/ste-logo.png"/>	
+		<img class="main-logo" src="https://raw.githubusercontent.com/Administrador01/site-ste/master/Site-STE/img/ste-logo.png"/>	
 		<div class="main-menu">
 			<ul class="menu">
 				<li class="home">
 					<a id="EnlaceHome" href="">
-						<img src="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/home.png"/>
+						<img src="https://raw.githubusercontent.com/Administrador01/site-ste/master/Site-STE/img/home.png"/>
 					</a>
 				</li>
 				

@@ -7,7 +7,7 @@
 <UserPref name="url1" display_name="URL 1:" default_value=""/>
 <UserPref name="titulo1" display_name="Titulo 1:" default_value="Titulo"/>
 <UserPref name="texto1" display_name="Texto 1:" default_value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus arcu quam, a finibus mi convallis sed."/>
-<UserPref name="imagen1" display_name="Imagen 1:" default_value="https://site-ste.googlecode.com/svn/trunk/Site-STE/img/client64x.png"/>
+<UserPref name="imagen1" display_name="Imagen 1:" default_value="https://raw.githubusercontent.com/Administrador01/site-ste/master/Site-STE/img/client64x.png"/>
 
 
 <Content type="html"><![CDATA[
@@ -86,6 +86,7 @@ a.btn{
     vertical-align: middle;
     display: inline-block;
     text-decoration:none;
+    bottom:10px;
 }
 
 </style>
