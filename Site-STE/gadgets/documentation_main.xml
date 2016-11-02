@@ -29,6 +29,19 @@
     text-align:left;
 }
 
+.destacadoHomeAcceder {
+    background-color: #fbfbfb;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    float: left;
+    margin: 1.6%;
+    padding: 20px 20px 10px 20px;
+    width: 100%;
+    height:160px;
+    max-width:241px;
+    text-align:left;
+}
+
 h2 {
     color: #0078d2;
     font-family: "BBVA Web Light",arial,sans-serif;
@@ -91,7 +104,7 @@ a.btn{
 </style>
 
 
-    <div class="destacadoHome">
+    <div class="destacadoHomeAcceder">
       <h2 id="titulo1"></h2>
       <img id="imagen1" src="" alt="Imagen"/>
       <p id="texto1"></p>
